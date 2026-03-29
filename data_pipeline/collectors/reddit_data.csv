@@ -1,5 +1,8 @@
 title,text,comments,score,subreddit,datetime_utc
-"Epic Games Layoffs Included Terminally Ill Father, Whose Family Has Now Lost His Life Insurance",,"Why the fuck is your life insurance dependent on your job? What kind of dystopian bullshit is this? | Oh look, Epic doing something scummy again.  | What's that line from Shrek?! Some of you will die... | That’s a feature these days, not a bug. | Usa! Usa! Usa! ",1251,technology,2026-03-29 19:30:10
+"Epic Games Layoffs Included Terminally Ill Father, Whose Family Has Now Lost His Life Insurance",,"What's that line from Shrek?! Some of you will die... | Why the fuck is your life insurance dependent on your job? What kind of dystopian bullshit is this? | That’s a feature these days, not a bug. | This isn't new... This is happening every day in everyone industry and yes, you should be mad. 
+
+
+Health should not be tied to employment.  | Oh look, Epic doing something scummy again. ",7615,technology,2026-03-29 19:30:10
 White House App Found Tracking Users' Exact Location Every 4.5 Minutes via Third-Party Server,,"I independently analyzed the iOS version (decrypted IPA, v47.0.1) and can confirm every finding from the original Android analysis holds true on iOS. But the iOS version has some additional problems that are arguably worse.
 
 The location permission dialog literally lies to you. The `NSLocationWhenInUseUsageDescription`, the string Apple shows users in the system permission popup, is set to: *""This app does not use your location.""* That's the text you see in the trusted iOS permission dialog while `OneSignalLocation.framework` is sitting right there in the bundle ready to collect your GPS.
@@ -21,13 +24,15 @@ The `withNoLocation` plugin failed on iOS too. `OneSignalLocation.framework` (92
 
 Everything from the original blog (cookie/paywall bypass injector, Elfsight JS injection, MailChimp email collection, OneSignal profiling, dev artifacts) is confirmed present on iOS as well. This isn't an Android specific issue, it's both platforms.
 
-All of this was done through static analysis of the decrypted IPA, ARM64 disassembly via otool, string table extraction, and privacy manifest comparison across all bundled frameworks. No runtime or network analysis needed, it's all right there in the binary. | This is hysterical. I mean I really, really love this. Wait until it starts scraping purchases and bank account info.  | If the people who downloaded the White House app could read, they would be very upset.  | What the hell is the white house app? | I can't even get mad at this. No shit lmao",20775,technology,2026-03-29 04:02:16
-"Pamela Anderson’s New Campaign Bans AI Models | Anderson stars in a new campaign for AEO’s Aerie that doubles down on the lifestyle brand’s pledge to “always keep it 100 percent real: no AI-generated bodies, no AI-generated people. Ever.”",,No Comments (Timeout),1375,technology,2026-03-29 12:00:59
+All of this was done through static analysis of the decrypted IPA, ARM64 disassembly via otool, string table extraction, and privacy manifest comparison across all bundled frameworks. No runtime or network analysis needed, it's all right there in the binary. | This is hysterical. I mean I really, really love this. Wait until it starts scraping purchases and bank account info.  | If the people who downloaded the White House app could read, they would be very upset.  | What the hell is the white house app? | I can't even get mad at this. No shit lmao",21195,technology,2026-03-29 04:02:16
+"Pamela Anderson’s New Campaign Bans AI Models | Anderson stars in a new campaign for AEO’s Aerie that doubles down on the lifestyle brand’s pledge to “always keep it 100 percent real: no AI-generated bodies, no AI-generated people. Ever.”",,"as if ai was needed in the past to bend reality, i can make people out of photos of cheese lol | Idk what y'all squabbling about in rhe comments, all I know is the brand is from the same 'my jeans (genes) are blueee' ad lmao | She looks pretty normal now. Dont look all fake.  | Pretty loose basis for calling this a technology article. | Pam Anderson as a spokesperson for real. Ok.",1618,technology,2026-03-29 12:00:59
+Police used AI facial recognition to arrest a Tennessee woman for crimes committed in a state she says she’s never visited,,"That’s honestly terrifying. Imagine being locked up for months in a place you’ve never even been to, all because an algorithm said “close enough.” And the worst part is they didn’t even double check basic things like where she actually was at the time. AI is supposed to assist, not replace common sense. | But sure let's implement this technology into everything! What could possibly go wrong? | what happens when AI deepfakes a face onto some random to lockup whoever they want? Or creates a crime that never happened? We’re fucked  | Can't wait for the cops , and the AI company get sued to hell. | The issue isn't just the AI but also about how much weight people give it without even questioning it",307,technology,2026-03-29 20:09:27
 "White House unveils ‘OnlyFarms’ website, welcomes farmers with golden tractor on South Lawn",,"4chan government | Government makes a OF parody and I am reading about it on news website that used to be an ISP. I am indeed having a stroke.  | We truly live in the Onion universe  | &gt; Trump told the crowd that no president had been more supportive of agriculture, reminding his audience, “I just gave you $12 billion” in assistance this past December.
 
 I like how he leaves out the part that he gave them that assistance because they were suffering under his policies.  | &gt; “And rain or shine, you don’t mind,” he added. “The one thing about farmers, they don’t care about that weather.”
 
-I can’t think of a group that cares *more* about the weather than farmers. ",8966,technology,2026-03-28 23:45:38
+I can’t think of a group that cares *more* about the weather than farmers. ",9061,technology,2026-03-28 23:45:38
+No one is happy with NASA's new idea for private space stations,,"I for one one can't wait to stay at ""Arby's - Where's The Meat Station"" in route to Mars. | I am sure it’s Trump appointed crony’s idea to have private space stations. Won’t be long before the rich have a private space colony to escape to since they trashed the earth.  | Didn't we see this in Elysium? | So help me understand what the proposed arrangement is now. The government owns the main vehicle, private companies own their own modular attachments, and if they're not good we can jettison them and forcefully deorbit? /s I can't imagine why they're not on board with this. | ""NASA's"" idea = Musk's idea. ",207,technology,2026-03-29 18:30:09
 "Australia has to fight back against misinformation about climate change, Senate report says",,"This is a problem in the US and Canada too. I suspect it is a global issue. It's painful to think that perhaps one of the most existential threats to life on this planet is getting assistance from people willing to end everything just to have had a bit more luxury and excess before joining the pile of dead bodies a few decades from now. | How can Australia tackle the scourge of online bots and trolls, and orchestrated disinformation campaigns, that are trying to prevent action on climate change and keep our economy reliant on fossil fuels?
 
 
@@ -46,43 +51,36 @@ It sounded an alarm about the health of Australia's digital town square and the 
 ""Worryingly, the committee heard that Australia has some of the highest levels of concern about information integrity globally.""
 
 
-The majority report, backed by Labor, Liberal, and Greens senators, made 21 recommendations for the federal government | https://youtu.be/ejorQVy3m8E?is=z5SYQrpecxqJBrcn",185,technology,2026-03-29 17:05:58
+The majority report, backed by Labor, Liberal, and Greens senators, made 21 recommendations for the federal government | https://youtu.be/ejorQVy3m8E?is=z5SYQrpecxqJBrcn",229,technology,2026-03-29 17:05:58
 FTC Targeting Dealers for Advertising Unavailable Cars,,"Bait and switch.  | I hate this.  
 
-I hate this as much as when they say they have a vehicle that doesn't exist yet. They list it a vehicle as available when it is in a pre production phase. | They have been doing this forever.  20 years ago, we went in to buy a truck that was advertised in the paper and hugely discounted.  We were out to lunch with the mother-in-law, so she wanted to tag along.  While we were talking with the dealership, who said they didn't have it anymore and that it was already sold and the new owners drove off with it a few days before, she wandered the lot and found it hidden in a fenced off area in the back.  After going round and round with them, we finally got them to sell us the truck at the advertised price. They weren't happy about it, and certainly weren't happy that she walked into their ""secured"" area and found it. | They…. They are doing something good? Elon is paying them for sure | Can we do this for job postings too?",1021,technology,2026-03-29 07:42:42
-No one is happy with NASA's new idea for private space stations,,No Comments (Timeout),129,technology,2026-03-29 18:30:09
-"L.A. Dodgers Tell 82-Year-Old, 50-Year Season Ticket Holder: ‘Go Digital’—Or Don’t Go At All",,No Comments (Timeout),10333,technology,2026-03-28 17:30:07
+I hate this as much as when they say they have a vehicle that doesn't exist yet. They list it a vehicle as available when it is in a pre production phase. | They have been doing this forever.  20 years ago, we went in to buy a truck that was advertised in the paper and hugely discounted.  We were out to lunch with the mother-in-law, so she wanted to tag along.  While we were talking with the dealership, who said they didn't have it anymore and that it was already sold and the new owners drove off with it a few days before, she wandered the lot and found it hidden in a fenced off area in the back.  After going round and round with them, we finally got them to sell us the truck at the advertised price. They weren't happy about it, and certainly weren't happy that she walked into their ""secured"" area and found it. | Can we do this for job postings too? | They…. They are doing something good? Elon is paying them for sure",1083,technology,2026-03-29 07:42:42
+How Meta’s victim-blaming failed to sway jurors in landmark social media addiction trial | Technology,,"Good, Fuck Meta/Facebook.  | Unpopular opinion: Calling it an addiction is bs. No one ruins there lives to be on FB or IG. I use IG barely. The others dont care for. Ive never heard anyone going to rehab for online apps. I work with addicts in addiction therapy and not sure how they compare the two. Ive seen people destroy their lives via gambling, alcohol and drugs but online addiction? No.",133,technology,2026-03-29 18:39:39
+European country vows to give homeowners ‘free electricity' instead of switching off wind turbines,,"UK. Just say UK. | meanwhile in germany we still argue about whether heat pumps are actually good or if we should just freeze. this is what happens when you actually commit to the energy transition instead of just talking about it | This isn't about energy policy. It's about political incentives.
+
+When renewables create oversupply, the politically easy choice is to subsidize consumption rather than curtail generation. Every politician gets credit for ""lowering energy costs"" while nobody gets blamed for ""wasting renewable power.""
+
+The real cost shows up later in market distortions and stranded assets. But that's someone else's problem.
+
+What we're seeing here is equilibrium lock-in - once the subsidy starts, the political path dependence makes it nearly impossible to reverse, even when it's economically inefficient. | It’ll be interesting how that works…electricity is not cheap at all in the EU…",73,technology,2026-03-29 19:36:05
+"L.A. Dodgers Tell 82-Year-Old, 50-Year Season Ticket Holder: ‘Go Digital’—Or Don’t Go At All",,"The headline could have been ""L.A. Dodgers rewards loyal fan: 50-year season ticket holder has trouble with new ticket system: Gets lifetime ticket for simplicity."" | At least they are ruining baseball for their fans too | Wife and I were in Charleston, SC several years ago on vacation.  We randomly walked by a minor league stadium with a game about to start and decided to go, at least for a few innings. 
+They wouldn't let us buy tickets at the counter, we had to download the app and register an account first.  The stupid app kept failing, just spinning when we hit enter.  
+Eventually I guess I complained enough that they made some concession and let me purchase a ""ticket"" at the counter (it wasn't an actual ticket, they just ran my credit card and gave me a receipt).  
+The game sucked and hardly anyone was there, so good job everyone.  | The term for what to do is called Grandfathering. Just let the old guy be the exception. WTF? Yo, Magic Johnson, you're a co-owner, do something about that. | Seen this story before. Local team did this (not baseball) and they had so much pushback that they had a spot where the small number of fans who still wanted physical tickets could go. Win for the fans right? Nope, two years later they quietly turfed it since most fans were past the initial blowback.
+
+The days of a kid holding onto their first ticket stub are dead and that’s really sad. ",10405,technology,2026-03-28 17:30:07
 “Educational” AI YouTube videos accused of teaching kids to play in traffic &amp; eat toxic food,,"This is actually why I don’t let my kids watch YouTube. They are the biggest failures of content moderation. I’d rather pay a service dedicated to kids knowing at least one reasonable simian brain saw the video and Ok’d for release. | we replaced human version of teacher with ai, what can someone expect | And this is exactly why the kids aren't let loose on YouTube. 
 
 Even before the AI slop, the utter brainrot on there was enough to keep them away from it. I'm a frequent YouTube watcher myself, but I only watch channels on pretty specific subjects (vintage computers, synths, railways) and I stick to channels with real people.
 
 A few videos that looked interesting have cropped up lately in my suggestions, but are basically AI produced slideshows reading the Wikipedia page. Utterly pointless cash grabs. | Still better than anything coming from PragerU Kids. | I just had a children’s video pop up discussing how to trade crypto.
 
-We are in the darkest timeline.",2203,technology,2026-03-29 00:29:40
-How Meta’s victim-blaming failed to sway jurors in landmark social media addiction trial | Technology,,"Good, Fuck Meta/Facebook. ",75,technology,2026-03-29 18:39:39
-iPhone New iOS Age Verification Sparks Outrage as Users Say 'I Will Switch to Android',,"I'm gonna go back to flip phones and snake | Don't iPhones already need an Apple account? That asks for your name, surname, DoB... and always has. I hope nobody had any delusions of anonymity on an ecosystem that has you making an online account in the first place, plus handles your credit cards, plus contains your home banking generally, plus handles your ticket booking, plus...
+We are in the darkest timeline.",2266,technology,2026-03-29 00:29:40
+Sony temporarily suspends memory card sales due to shortages,,"Nobody was buying them. Competitors were better | Oh no! Anyway..
 
-Like sure there's much to say about the specific legislative push for *services* right now, but our personal *devices* have never been anonymous - and if you want your Apple Pay and all that fancy stuff, never will be. | All app stores will have this requirement  | Why the fuck can’t parents do their fucking job and turn on parental controls.
+Seriously though, these are overpriced and underspec’ed. Sony just loves to slap their name on it and add their tax. | I'm suspending memory card sales too. | Somebody else just did too. Was it Samsung? It'll just be the next tech/storage that jumps up to ridiculous prices.
 
-
-I guess fuck my privacy | Verizon already knows I’m over 18, they have literally all my information when I purchased a data plan and the damn phone from them. Why does Apple need another layer of this shit?",3947,technology,2026-03-28 21:12:52
-Kingdom Come: Deliverance 2’s Translator Says He Was Fired Because Warhorse Plans To Use ‘AI For All Translations Going Forward’,,"I've seen some animoo shows use AI for subtitles before for even dubs because it's sometimes difficult to make out what they said. They're fucking awful. Errors everywhere, barely cohesive and never matching what was said. And zero oversight. No one goes back to fix that shit. | We really need to not reward this kind of behavior by developers. | Incredibly stupid choice.
-
-
-At least from Czech to English, you want it to be perfect | Considering that KCD is supposed to be a game series about historically accurate *everything*, it feels a bit lackluster for the devs to not give a shit about translations.
-
-Really makes me wonder if the story about the studio being history nerds was true or just a PR stunt. | Guess I just dont buy kingdom come",5043,technology,2026-03-28 19:53:36
-‘Suddenly energy independence feels practical’: Europeans are building mini solar farms at home,,"Europeans building solar plants at home since 2000 when subsidies began. 
-
-
-'Suddenly' lol. | Except for Germany, because our energy minister is a fossil fuel lobbyist who wants to scrap private credits for solar and wind power, during an energy crisis!  | As a french person with all our nuclear power &amp; stuff, I feel like what we need isn't more ways to generate electricity, but more ways to consume it: Better infrastructure for electric cars would probably make a bigger impact on energy independance compared to more electricity right now...
-
-Of course, progressing on that front does not preclude progressing on the other front as well. | US power companies have been killing net metering to slow down solar production. Now with data center needs and energy crisis they shot themselves in the foot | The EU took a hit on gas/oil when the Russians invaded Ukraine (again). 
-
-There was talk then about shifting away from depending on fossil fuels. Did they.. not continue to prioritize pursuing that? 
-
-(No criticism intended! I'm living in the shards of what's left of the glass house formerly known as the US 😣)
-",6025,technology,2026-03-28 18:54:00
+If you're looking for Micro SD Express cards for Switch 2 they are actually pretty affordably priced at the moment.",56,technology,2026-03-29 20:33:14
 A Simple Blood Test Could Predict Dementia Risk 25 Years Early,,"I don’t wanna know | Only problem is we forgot where we put it | I can see the benefit, particularly if there is anything the diagnosee could do to help.
 
 But not entirely sure I would want to know if I am gonna turn into a vegetable in the future.  | Donald Trump has entered the chat.
@@ -91,7 +89,30 @@ Donald Trump has left the chat.
 
 Donald Trump has entered the chat.
 
-Donald Trump has left the chat. | What's the point of this? Isn't this the same as being told the date when you die? ",410,technology,2026-03-29 09:08:50
+Donald Trump has left the chat. | What's the point of this? Isn't this the same as being told the date when you die? ",436,technology,2026-03-29 09:08:50
+iPhone New iOS Age Verification Sparks Outrage as Users Say 'I Will Switch to Android',,"I'm gonna go back to flip phones and snake | Don't iPhones already need an Apple account? That asks for your name, surname, DoB... and always has. I hope nobody had any delusions of anonymity on an ecosystem that has you making an online account in the first place, plus handles your credit cards, plus contains your home banking generally, plus handles your ticket booking, plus...
+
+Like sure there's much to say about the specific legislative push for *services* right now, but our personal *devices* have never been anonymous - and if you want your Apple Pay and all that fancy stuff, never will be. | All app stores will have this requirement  | Why the fuck can’t parents do their fucking job and turn on parental controls.
+
+
+I guess fuck my privacy | Verizon already knows I’m over 18, they have literally all my information when I purchased a data plan and the damn phone from them. Why does Apple need another layer of this shit?",3987,technology,2026-03-28 21:12:52
+Kingdom Come: Deliverance 2’s Translator Says He Was Fired Because Warhorse Plans To Use ‘AI For All Translations Going Forward’,,"I've seen some animoo shows use AI for subtitles before for even dubs because it's sometimes difficult to make out what they said. They're fucking awful. Errors everywhere, barely cohesive and never matching what was said. And zero oversight. No one goes back to fix that shit. | We really need to not reward this kind of behavior by developers. | Incredibly stupid choice.
+
+
+At least from Czech to English, you want it to be perfect | Considering that KCD is supposed to be a game series about historically accurate *everything*, it feels a bit lackluster for the devs to not give a shit about translations.
+
+Really makes me wonder if the story about the studio being history nerds was true or just a PR stunt. | One of the best things to happen to gaming in the past 20 years is improved localisation. This is such a backwards step!",5083,technology,2026-03-28 19:53:36
+‘Suddenly energy independence feels practical’: Europeans are building mini solar farms at home,,"Europeans building solar plants at home since 2000 when subsidies began. 
+
+
+'Suddenly' lol. | Except for Germany, because our energy minister is a fossil fuel lobbyist who wants to scrap private credits for solar and wind power, during an energy crisis!  | US power companies have been killing net metering to slow down solar production. Now with data center needs and energy crisis they shot themselves in the foot | As a french person with all our nuclear power &amp; stuff, I feel like what we need isn't more ways to generate electricity, but more ways to consume it: Better infrastructure for electric cars would probably make a bigger impact on energy independance compared to more electricity right now...
+
+Of course, progressing on that front does not preclude progressing on the other front as well. | The EU took a hit on gas/oil when the Russians invaded Ukraine (again). 
+
+There was talk then about shifting away from depending on fossil fuels. Did they.. not continue to prioritize pursuing that? 
+
+(No criticism intended! I'm living in the shards of what's left of the glass house formerly known as the US 😣)
+",6092,technology,2026-03-28 18:54:00
 Turns Out That Advertisers Not Wanting To Fund Neo-Nazi-Adjacent Content Isn’t An Antitrust Violation,,"Musk was just trying to scare off Advertisers with the threat of lawsuits.  | This article is about Elon Musk and X. Musk apparently thinks it's a crime when ads don't want to do business with him, after he told the ads to go ""F themselves"" too
 
 &gt;Remember when Elon Musk told advertisers to “go fuck” themselves and then sued them for the crime of taking his advice? A federal judge has now dismissed that lawsuit — with prejudice — confirming what anyone with a passing familiarity with antitrust law already knew: companies deciding they don’t want their brands plastered next to extremist content aren’t engaged in an illegal conspiracy. They’re just making basic (probably pretty smart) business decisions.
@@ -100,54 +121,45 @@ Turns Out That Advertisers Not Wanting To Fund Neo-Nazi-Adjacent Content Isn’t
 
 Every time I reply with this, people respond “nobody’s on Twitter anymore, it’s all bots,” but I’m talking about, like, Verizon.  Coca-Cola, Delta Airlines, Allstate, Target… like, you can Tweet at them. They have an official account. 
 
-That’d be like if State Farm was on 4Chan or Rumble or something. There’s like heinous shit on Twitter all the time, completely out of control. The owner of the website tweets heinous shit and they’re like “well, we need to maintain a presence.” | the funniest part about this whole saga is that antitrust law was literally designed to protect consumers from monopolies, not to force people to buy your product. imagine telling your advertisers to go fuck themselves on live television and then suing them when they actually listen | Nope. That's just businesses making a decision about where to put their advertising dollars. If they don't want to be associated with what's on X, that's perfectly legitimate.",1934,technology,2026-03-29 00:11:11
+That’d be like if State Farm was on 4Chan or Rumble or something. There’s like heinous shit on Twitter all the time, completely out of control. The owner of the website tweets heinous shit and they’re like “well, we need to maintain a presence.” | the funniest part about this whole saga is that antitrust law was literally designed to protect consumers from monopolies, not to force people to buy your product. imagine telling your advertisers to go fuck themselves on live television and then suing them when they actually listen | Nope. That's just businesses making a decision about where to put their advertising dollars. If they don't want to be associated with what's on X, that's perfectly legitimate.",1975,technology,2026-03-29 00:11:11
 Study: Sycophantic AI can undermine human judgment,,"Now imagine what having human sycophants like does. Of course executives love generative AI, they've been given the equivalent of ""AI psychosis"" since long before generative AI was a product. | You know, that's not just a good observation, that's an important one. And you are bringing up the right point at exactly the right time. These are production-quality ideas, arstechnica.  | Like the Trump administration? | It's already undermining human judgment. Ask it to do anything the developers find ""unethical"" and it will stop itself, despite you giving it explanations of why it's not unethical. | &gt; doomsday sentiments
 
-“please stop being so negative about how overly positive our AI is …” SMH we’re done for.",235,technology,2026-03-29 10:33:46
-"Valve veteran Chet Faliszek slams Tim Sweeney and Epic Games for laying off 1000 people while making ""as much money as possible… and hey Tim, Gabe's better at that than you"": ""I worked my ass off at Valve, and I could retire today. I made more money than I'll ever make.""",,"Epic fail. You can't pivot your company to new projects? Just thought Fortnite money would be endless? Management failed and the boots on the ground pay the price. | “made more money than I’ll ever make” what? | Portalofevil.com | I work in games, and this is sad but not surprising. Ambition is what grows companies and creates layoffs. Same driver. Only difference is success or failure. Epic failed at fighting Roblox, this is what happens. Valve has done nothing, can’t release most of its projects and sits there getting paid. So of course it’s more stable.
+“please stop being so negative about how overly positive our AI is …” SMH we’re done for.",262,technology,2026-03-29 10:33:46
+How rising gas prices are changing the math on owning an EV in California,,"Really glad I live in a bright blue city with public transportation.
 
-The real shit show is public companies with CEO’s that have something to prove. Be wary of those. Worst places to work is an executive bunch who want to “the next big thing” but know jack shit on how to get there. Expect mass layoffs.
- | Valve is no saint and they make billions from unregulated gambling in cs and tf.",1135,technology,2026-03-28 22:34:12
-SoftBank has taken on a new $40 billion loan to help it cover its $30 billion commitment to invest in OpenAI,,"We need to go deeper | Sounds awfully Ponzi-esque to me.
+The Trumpers who have no way to go buy groceries without filling up their tanks can eat a fat one.
 
-Just saying. | When this bubble pops it’s taking everything with it. So much money involved. | So they can take a massive loan to pay their loans but If I do the same is fraudulent according to my mortgage provider and the government…. Ah yeah very cool. | ""Softbank pays their credit card bill with another credit card"" /s",2683,technology,2026-03-28 16:17:35
-Meta &amp; Google Found Liable in Landmark Cases for Knowingly Causing Harm to Young People,,"meanwhile meta and google are probably just calculating the fine as a cost of doing business. the actual damages are probably 10x what they got fined and they know it. slap on the wrist | finally big tech is being held with ""do not mess up kids"" | What about us old people? ",740,technology,2026-03-28 23:01:31
-The Shocking Speed of China’s Scientific Rise,,"Shocking?  Its only shocking to anybody who thinks defunding education is a good thing.   | Government funding education, research institutions and infrastructure leads to thriving scientific research?
-
-
-
-Shocking. Truly no one could have predicted this | Alternative Headline: The shocking speed of the Rise of Ignorance in the United States. | There’s nothing shocking: 2/3 of their leading scientists got their PhDs in the US as they were offered better opportunities by government-funded research in China than by the universities in the US. | I mean, the US pretty much explicitly abandoned any effort to maintain its position here. ",5234,technology,2026-03-28 12:32:10
+Have a good time eating shit for dinner, Trumpers. | Unfortunately as an EV owner I am not sitting pretty right now. Electricity prices will be going up due to this idiotic war, just not quite as soon as gas prices. Natural gas is a big part of the grid, and energy is pretty fungible- CA for example uses 33% natural gas so if that skyrockets, all other forms of generation will also go up as the demand rises for them. | The unintended consequences of their intentional actions. What shitgibbons. I hope this (trying to make Americans more reliant on fossil fuels under the Trump administration) spectacularly backfires on the oil industry. | Let it skyrocket. I hope O&amp;G becomes completely economically unfeasable. And all those subsidies and loans and research and demand dollars go straight in to green energy.",21,technology,2026-03-29 20:06:44
 Operations Epic Fury / Roaring Lion Megathread,"This megathread is for news regarding the conflict that started 28 February 2026 with the chief belligerents being United States, Israel and Iran. Posting news events and articles related to the conflict itself, ancillary military actions, economic and diplomatic events are permitted.  Analysis and opinions posts can also be submitted here. 
 
 What is NOT permitted is bigotry, racism, calls for violence of any kind. 
 
-Please read our rules in the sidebar as well as Reddit's Content Policy before posting or commenting.","So around 4:10 PM, 3/28, fires were detected on the south side of Kharg Island at the Methanol plant, and northwest near the Gas Power Plant.  Some fires were also detected near Das Island, which is a funny name for an island.  Crude and LNG exports. | ""Conflict""....It's a war. You also delete any post showing how terrible Israel is. This sub is a fucking joke. 0 integrity.",163,news,2026-03-14 19:40:49
-"Pentagon preparing for weeks of ground operations in Iran, Washington Post reports",,"Pentagon desperately leaking info about land invasion hoping someone stops this avoidable disaster. | Oooof, this clown really is going to repeat Iraq after shitting on Middle East entanglements for years isn't he?  | 
-What's going to happen when the American public see US soldiers being killed by fpv drones like in Ukraine? 
-
-Cause that's what's about to happen.  | Oh wow who could have seen this coming | Iraq 2.0, with an even stupider president.",29345,news,2026-03-29 06:19:26
-Iran warns US over ground attack as regional powers meet in Pakistan,,"All of this for what... Israel? | When will congress wake the hell up?
+Please read our rules in the sidebar as well as Reddit's Content Policy before posting or commenting.","So around 4:10 PM, 3/28, fires were detected on the south side of Kharg Island at the Methanol plant, and northwest near the Gas Power Plant.  Some fires were also detected near Das Island, which is a funny name for an island.  Crude and LNG exports. | ""Conflict""....It's a war. You also delete any post showing how terrible Israel is. This sub is a fucking joke. 0 integrity.",165,news,2026-03-14 19:40:49
+Iran warns US over ground attack as regional powers meet in Pakistan,,"Kamala Harris getting us into another war. If Trump was president, it would have never happened, lol.  | All of this for what... Israel? | When will congress wake the hell up?
 
 When will the people? 
 
 You all want another Iraq War or even worse, Afghanistan?
 
-20 years of killing and dying for nothing? | trump sleepwalked into this trap like a moron. putin could be so proud | all because a rapist wanted a distraction. | The US would have a horrible time. Iran doesn't have some 3rd world ground force... ",367,news,2026-03-29 19:35:17
-Thousands gather for No Kings rally in Minnesota,,"It's weird how little news I've seen about No Kings today. We went to one in NC and the turnout was insane | I was at the St Paul event today. I would estimate well over 100k were there. Wall to wall people from the capitol to the cathedral. This picture was not taken at the height of the crowds.  | Fox News calling it a ""communist revolution"" lmao | It really seems like the headline should be reading ""millions"", because thousands isn't going to be enough. | Two of my siblings are there. There are *200,000* protesters at No Kings Flagship Protest at the MN State Capitol!",7855,news,2026-03-29 03:17:20
+20 years of killing and dying for nothing? | Where are Israel's ground troops?  | trump sleepwalked into this trap like a moron. putin could be so proud",2339,news,2026-03-29 19:35:17
+"Pentagon preparing for weeks of ground operations in Iran, Washington Post reports",,"Oooof, this clown really is going to repeat Iraq after shitting on Middle East entanglements for years isn't he?  | Pentagon desperately leaking info about land invasion hoping someone stops this avoidable disaster. | 
+What's going to happen when the American public see US soldiers being killed by fpv drones like in Ukraine? 
+
+Cause that's what's about to happen.  | Oh wow who could have seen this coming | Iraq 2.0, with an even stupider president.",30605,news,2026-03-29 06:19:26
+No Kings protests across the world,,"World’s most disliked person ….his only accomplishment  | This must be fake news because the #1 most trusted name in online news reporting, Gunther Eagleman aka David Freeman, said that it was reported that the No Kings Day protests had low turnout and that they were a flop. So the 8 million people that showed up in 50 states at over 3,300 events plus millions more around the world must not have gotten his message. | Looking at the photos, there was a n effigy of Prince.  What did Prince ever do? | King Charles must be very worried about his scheduled visit to Trump ..  | We've got a king who's no real trouble (although his brother is a twat) so we had a no fascists day instead.",921,news,2026-03-29 19:23:03
+Thousands gather for No Kings rally in Minnesota,,"It's weird how little news I've seen about No Kings today. We went to one in NC and the turnout was insane | I was at the St Paul event today. I would estimate well over 100k were there. Wall to wall people from the capitol to the cathedral. This picture was not taken at the height of the crowds.  | Fox News calling it a ""communist revolution"" lmao | It really seems like the headline should be reading ""millions"", because thousands isn't going to be enough. | Two of my siblings are there. There are *200,000* protesters at No Kings Flagship Protest at the MN State Capitol!",8085,news,2026-03-29 03:17:20
 Israeli airstrike in southern Lebanon kills 3 journalists covering the war,,"Israel loves killing journalists | Israel admits this was on purpose. 
 
 Plus they went after a CNN crew to harass.  | So they bombed a group of journalists in an independent country and no one bats an eyelid.
 
 Imagine if say Pakistan, conducted a targeted airstrike on a group of Israeli journalists in India. Or say Indonesia bombed a group of visiting Israelis in Darwin.
 
-It’s mind blowing how much sane washing the billionaire controlled media does when Israel does anything. | article should say murdered | They sure hate journalists who might report what they're doing.  They also seem to enjoy generating hate toward themselves.  They act as though they're superior in some way as well. ",7255,news,2026-03-29 02:56:33
-No Kings protests across the world,,"This must be fake news because the #1 most trusted name in online news reporting, Gunther Eagleman aka David Freeman, said that it was reported that the No Kings Day protests had low turnout and that they were a flop. So the 8 million people that showed up in 50 states at over 3,300 events plus millions more around the world must not have gotten his message. | King Charles must be very worried about his scheduled visit to Trump ..  | Winning the socials today. Too bad nothing will come of it",291,news,2026-03-29 19:23:03
+It’s mind blowing how much sane washing the billionaire controlled media does when Israel does anything. | article should say murdered | [removed]",7480,news,2026-03-29 02:56:33
 Judicial misconduct allegations: Florida judge faces ethics charges for making racial insensitive comments,,"&gt;After being questioned by the ethics panel, Jordan said this was the first and only time he's asked someone whether they've ""chopped cotton"" before. 
 
 Somehow that sounds worse. He picked 'now' to ask someone that specific question? | A white racist judge in Florida?  Shut my mouth and call me 'Biscuit' | The guy looks like an aged chicken drumstick | An unethical judge in Florida? You don't say.
 
-Actually, a different Florida judge came to mind. | And Eileen Cannon gets a pass? pathetic!",1085,news,2026-03-29 10:01:28
-"Nestlé says 413,793 KitKat candy bars stolen en route from Italy to Poland",,"This should be a mission in GTA | Kat burglars at it again. | Couldn’t have happened to a better (the worst) company.  | Nestle thieves whining about being stolen from gives me no sympathy.  | Good, fuck Nestle. I’m not even gonna dignify them by giving their name the accent.",5234,news,2026-03-28 23:36:58
+Actually, a different Florida judge came to mind. | And Eileen Cannon gets a pass? pathetic!",1262,news,2026-03-29 10:01:28
 Finland reports suspected territorial violation by drones,,"Seems like some of the drones meant for Ust-Luga strayed to the wrong side of the border
 
   
@@ -157,7 +169,8 @@ Edit: [https://yle.fi/a/74-20217941](https://yle.fi/a/74-20217941) | Well Boys w
 
 This is not an ad .. 
 
-Other reputable companies are available.",178,news,2026-03-29 17:44:08
+Other reputable companies are available.",267,news,2026-03-29 17:44:08
+"Nestlé says 413,793 KitKat candy bars stolen en route from Italy to Poland",,"This should be a mission in GTA | Kat burglars at it again. | Couldn’t have happened to a better (the worst) company.  | Nestle thieves whining about being stolen from gives me no sympathy.  | Good, fuck Nestle. I’m not even gonna dignify them by giving their name the accent.",5381,news,2026-03-28 23:36:58
 Japan's foreign resident population hits record 4.12 million,,"If Japan wants more Japanese people they are going to need to seriously overhaul their work and life dynamics or things are gonna get bad.  | Thats surprising, has Japan made any changes to their foreign policy? | I feel like we are missing the obvious points about immigration:
 
 - Native population wants better access to job opportunities and do not want to compete with foreigners especially for high wage jobs
@@ -171,7 +184,7 @@ which is caused by:
 
 But many immigrants are simply moving to avoid the same things. We are all trying to avoid the same situations. 
 
-Really this boils down to people feeling the scarcity around them... and this is happening all over the world because billionaires are trying to squeeze every remaining cent for themselves. | [deleted] | So I guess there'll be similar sentiment towards similar groups as per Australia, Canada, UK etc. foreshadowing the rise of populism. ",7043,news,2026-03-28 22:09:48
+Really this boils down to people feeling the scarcity around them... and this is happening all over the world because billionaires are trying to squeeze every remaining cent for themselves. | [deleted] | So I guess there'll be similar sentiment towards similar groups as per Australia, Canada, UK etc. foreshadowing the rise of populism. ",7233,news,2026-03-28 22:09:48
 "Missing aid boats have safely reached Cuba, US confirms",,"no mention on wtf happened, im glad they are alive! | Thank God. I assumed we blew them up.  | Really suspicious that it made no mention of what happened and why there was no contact for a few days
 
 Maybe they were boarded and detained by a certain coast guard  | &gt;&gt; Later on Friday the US Coast Guard, which was not involved in search efforts, announced it had received a report at 10.36am (2.36pm GMT) that “the two vessels safely transited to Cuba”.
@@ -180,7 +193,12 @@ Maybe they were boarded and detained by a certain coast guard  | &gt;&gt; Later 
 No explanation why they had disappeared to begin with but glad they were found safe.
 
 
-On a  separate but related note, given everything that's going on with the Iran War and how the US has betrayed its allies time and time again, why don't countries defy the bullying and threats and start supplying Cuba with oil  instead of being terrified about potential tariffs that may not even come to fruition? I feel like Cuba has been forgotten ever since the war. It's so completely disgusting with this administration is doing. Can't wait for the complete destruction of the US empire.  | They were found by the Mexican navy. Unsure why the Guardian chose to quote a “the US CG, no involved in the search”… https://www.msn.com/en-us/news/world/missing-aid-boats-bound-for-cuba-have-been-located-mexican-authorities-say/ar-AA1ZCtSX",1826,news,2026-03-29 03:48:22
+On a  separate but related note, given everything that's going on with the Iran War and how the US has betrayed its allies time and time again, why don't countries defy the bullying and threats and start supplying Cuba with oil  instead of being terrified about potential tariffs that may not even come to fruition? I feel like Cuba has been forgotten ever since the war. It's so completely disgusting with this administration is doing. Can't wait for the complete destruction of the US empire.  | They were found by the Mexican navy. Unsure why the Guardian chose to quote a “the US CG, no involved in the search”… https://www.msn.com/en-us/news/world/missing-aid-boats-bound-for-cuba-have-been-located-mexican-authorities-say/ar-AA1ZCtSX",1888,news,2026-03-29 03:48:22
+France detains two more suspects over foiled Paris Bank of America attack,,This is probably just the beginning,142,news,2026-03-29 17:22:45
+"Damaged Ust‑Luga terminal may force Russian refineries to cut runs, sources say",,"Perfect, just what we need, even less oil.",93,news,2026-03-29 19:25:40
+Actor James Tolkan of 'Top Gun' and 'Back to the Future' fame dies at 94,,"94 is a good run.  I think his Top Gun performance was underrated.  When you look back at it, he pretty much stole every scene he was in.  Really showed what an actor like him can do with a well-written part. | Principle Strickland
+
+He also played the sarge in masters of the universe and scored a hottie at the end 🤣 | He always played the part that could only be played by him. God I loved his character in BTTF | Nooo Principal Strickland  | Man had one of the most iconic ‘authority figure’ faces in movies. RIP.",434,news,2026-03-29 10:05:01
 Judge pauses blockbuster merger between TV station owners Nexstar and Tegna,,"if the deal still passes Nexstar will become the largest owner of tv stations in the nation, which monopolizes local news, limits how you can access it (nexstar is money hungry and doesn't stream local news online or on streaming platforms, they want you to watch their channels on regular cable/pay tv so they get retransmission money) and limits the amount of independent news sources. the following cities are places where Nexstar will have control over 2 or more tv stations if the deal passes
 
 Huntsville, AL; Fort Smith, AR; Little Rock, AR; Sacramento, CA; San Diego, CA; Denver, CO; Hartford, CT; Washington, D.C.; Tampa, FL; Quad Cities area, IL and IA; Indianapolis, IN; Des Moines, IA; New Orleans, LA; Grand Rapids, MI; St. Louis, MO; Buffalo, NY; Charlotte, NC; Greensboro/Piedmont area, NC; Cleveland, OH; Columbus, OH; Portland, OR; Scranton/Wilkes Barre, PA; Knoxville, TN; Memphis, TN; Abilene, TX; Austin, TX; Bryan, TX; Dallas, TX; Houston, TX; Lufkin, TX; Odessa/Midland, TX; San Angelo, TX; Waco, TX; Virginia Beach area, VA
@@ -191,24 +209,16 @@ In total they will own 265(?) TV stations across the United States and will be a
 
 I got PBS and everything else I have to keep checking who owns it and what is their agenda 🤷‍♂️ | Reminder that antitrust laws are still on the books, it's just that a Republican loser, Robert Bork (the same Bork who failed to get past the senate hearing for his nomination to the supreme court because he called the 9th amendment an ""ink blot"", and Mitch McConnel swore democrats would come to rue that day), said that ""antitrust doesn't actually mean monopolies are inherently bad.""
 
-It'd be egregiously wrong to say that everything wrong with this country comes down to republicans being allowed out in public...but sometimes it's hard not to come to that exact conclusion. | Nexstar, one of the operators that chose to not air *Jimmy Kimmel Live!* because he didn’t kiss Charlie and EriKa KirK’s asses?",1972,news,2026-03-29 01:26:45
-Actor James Tolkan of 'Top Gun' and 'Back to the Future' fame dies at 94,,"94 is a good run.  I think his Top Gun performance was underrated.  When you look back at it, he pretty much stole every scene he was in.  Really showed what an actor like him can do with a well-written part. | Principle Strickland
-
-He also played the sarge in masters of the universe and scored a hottie at the end 🤣 | He always played the part that could only be played by him. God I loved his character in BTTF | Nooo Principal Strickland  | Man had one of the most iconic ‘authority figure’ faces in movies. RIP.",370,news,2026-03-29 10:05:01
-Epstein victims to get $72.5M from Bank of America settlement,,"Did a quick search for those asking.  Looks like they ignored red flags, failing to file suspicious activity reports,  and made financial gains from their business with him despite having knowledge of his trafficking | So the banks have to pay the hush money but the people who committed the crimes are mostly going unpunished?  OK. | Yet still only two arrests  | That seems particularly low considering the number of victims and the extent of the charges | ""There is no credible information that he trafficked [women and girls] to other individuals."" - Kash ""lying under oath"" Patel",22251,news,2026-03-28 14:54:13
-France detains two more suspects over foiled Paris Bank of America attack,,,94,news,2026-03-29 17:22:45
+It'd be egregiously wrong to say that everything wrong with this country comes down to republicans being allowed out in public...but sometimes it's hard not to come to that exact conclusion. | Nexstar, one of the operators that chose to not air *Jimmy Kimmel Live!* because he didn’t kiss Charlie and EriKa KirK’s asses?",2048,news,2026-03-29 01:26:45
+Epstein victims to get $72.5M from Bank of America settlement,,"Did a quick search for those asking.  Looks like they ignored red flags, failing to file suspicious activity reports,  and made financial gains from their business with him despite having knowledge of his trafficking | So the banks have to pay the hush money but the people who committed the crimes are mostly going unpunished?  OK. | Yet still only two arrests  | That seems particularly low considering the number of victims and the extent of the charges | ""There is no credible information that he trafficked [women and girls] to other individuals."" - Kash ""lying under oath"" Patel",22370,news,2026-03-28 14:54:13
 Suburban Detroit school settles lawsuit with Palestinian student over Pledge of Allegiance dispute,,"Not having to participate in the pledge of allegiance is pretty old (1943), settled case law.   The school district needs to seriously consider getting rid of that teacher. | Is the teacher still employed in this district? I didn’t see anything about that in the article  | &gt;“Our mission is to foster a school environment that is safe, respectful and welcoming for all,” Merritt said Friday.
 
 &gt;The Plymouth-Canton district did not admit liability. 
 
 Yea ok
 
- | &gt;Danielle Khalaf’s teacher told her, “Since you live in this country and enjoy its freedom, if you don’t like it, you should go back to your country,”
-
-Laziest, dumbest, most cliched thing you could say.
-
-Does that freedom he speaks of happen to include not reciting the Pledge of Allegiance? | Refusing to stand for the pledge is the most American thing you can do. It's called freedom. Diversity in action, behavior, and decision is people using freedom to express themselves and be themselves. The teacher is a fascist.",3224,news,2026-03-28 21:17:19
-"Damaged Ust‑Luga terminal may force Russian refineries to cut runs, sources say",,"Perfect, just what we need, even less oil.",40,news,2026-03-29 19:25:40
+ | Refusing to stand for the pledge is the most American thing you can do. It's called freedom. Diversity in action, behavior, and decision is people using freedom to express themselves and be themselves. The teacher is a fascist. | I personally find the pledge of the allegiance to be weird anyway. Too nationalist. ",3274,news,2026-03-28 21:17:19
+"Trump administration seeks Endangered Species Act exemption for oil, gas projects in Gulf",,"Gulf of Mexico folks. Not the Persian Gulf.  | US: So, our plan to kill a bunch of people went wrong. So now, we need to kill a bunch of animals to make up for it. Why? So we can extract planet killing juice. ",93,news,2026-03-29 15:04:23
 Tiger Woods in jail after being arrested on suspicion of DUI following car crash in Florida,,"Someone show him how to download uber/lyft before he kills someone. | Hire a driver, you rich fuck | Dude had it all. Best golfer in the world. Smoking hot wife. Unlimited money. 
 
 Now subject of memes and sleeping with a Trump.  | What's the difference between a golf ball and an SUV?
@@ -217,9 +227,12 @@ Tiger Woods can drive a golf ball straight for 300 yards... | Fucking guy is tur
 
 All the resources at his disposal to find help, and a way to fix his fucking problems, but he doesn't. 
 
-But, Dude!  Fine, if you simply just can't be bothered to get your fucking shit together, okay! But at the very least have the fucking decency to hire a goddamn driver.",4155,news,2026-03-28 18:01:03
-"UK ‘weeks away’ from medicine shortages if Iran war continues, experts say",,No Comments (Timeout),4446,news,2026-03-28 17:08:22
-DHS says Cory Lewandowski left department following Noem's ouster,,"They fired his girlfriend so he rage quit. Tale as old as time. | wasnt he at the shield of america meeting with noem?   just jumped to different agency on paycheck | Why would Lewandowski leave? Does he not want to serve the American people anymore?? 🤷🏻‍♂️ | This guy is quite the cockroach. He's hard to get rid of. | Now that he can no longer suck out taxpayer money, he'll suck her out.",493,news,2026-03-29 02:28:22
+But, Dude!  Fine, if you simply just can't be bothered to get your fucking shit together, okay! But at the very least have the fucking decency to hire a goddamn driver.",4197,news,2026-03-28 18:01:03
+"UK ‘weeks away’ from medicine shortages if Iran war continues, experts say",,"[The UK is already in the middle of a major medication shortage.](https://mediwatch.co.uk/guides/medicine-shortage-uk-complete-list) Dozens of medications are out of stock, it is just not really reported on. My pharmacist was able to find me an alternative, but the medication I was prescribed has now been out of stock for 18 months. 
+
+ | Wild how quickly ""regional conflict"" turns into ""your pharmacy can't fill your prescription."" Global supply chains are so fragile it's honestly terrifying. | The cheap generic drugs that most people actually take every day, aspirin, ibuprofen, antibiotics, antidepressants, are the ones with no financial cushion to absorb a 30% freight cost spike.
+
+The expensive brand name drugs will be fine. The ones regular people depend on won't be. | It's okay, because Trump himself and his friends will make a lot of money | Disturbed, not disrupted...if you are on a life-sustaining medication and the supply is insufficient or sporadic, then life is disrupted. When an industry specialist describes emerging challenges, they often seem to divorce themselves from the human end-user for whom this challenge becomes a crisis. When US president47 can control himself or the US  nation decides to restrain him and hold him accountable, the whole world will benefit. ",4493,news,2026-03-28 17:08:22
 "Women tended to cry more often than men. Women averaged nearly 6 crying episodes a month, while men averaged just under 3. Women were more likely to cry from loneliness or personal disputes with loved ones. Men tended to cry from feelings of helplessness or in reaction to media, such as a sad movie.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -236,7 +249,7 @@ Permalink: https://www.psypost.org/does-crying-actually-make-you-feel-better-new
 *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | I’m finding these numbers quite surprising given the age range.  They only had 25 guys but crying almost once a week on average still seems high to me - maybe I’m out of date or it’s cultural variation.
 
 Not judging just unexpected given my overall impression before these results.
- | I’m surprised at the number being that high for men.  | As I guy ,  maybe teared up slightly at a movie a few years back but no way that’s happening a few times a month. Guess I need to get back in touch with my emotions  | I cry because of cute cat clips and bumping my little toe. I guess my personal dispute could be with the nightstand I bump into all the time. We should create some distance.",3706,science,2026-03-29 15:33:18
+ | I’m surprised at the number being that high for men.  | As I guy ,  maybe teared up slightly at a movie a few years back but no way that’s happening a few times a month. Guess I need to get back in touch with my emotions  | I cry because of cute cat clips and bumping my little toe. I guess my personal dispute could be with the nightstand I bump into all the time. We should create some distance.",5109,science,2026-03-29 15:33:18
 "Agent Orange linked to aggressive bone marrow cancer in Vietnam veterans. American soldiers sprayed Agent Orange over the jungles of Vietnam and nearby countries from the air and from the ground, often mixing it with kerosene or fuel, another carcinogen, to help disperse it.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -250,8 +263,36 @@ Permalink: https://ecancer.org/en/news/27948-agent-orange-linked-to-aggressive-b
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Another horrific war crime.  | If you’re ever in Vietnam go to the war museums in Hanoi and Saigon and see the exhibits about how horrible this is | Now imagine what it did to the locals who were just trying to live their lives before this act of naked American imperial aggression.  | ""Agressive carpal tunnel syndrome of former *SS-Sonderkommandos* linked to pulling triggers in death camps too often.""",3227,science,2026-03-29 14:05:45
-"Countries with stronger precarious manhood beliefs (being a “real man” is something that requires constant demonstration through behavior and achievement) tend to have lower national happiness, but also lower GDP, lower life expectancy, lower social support, and heightened perceptions of corruption.",,No Comments (Timeout),8196,science,2026-03-29 07:18:51
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Another horrific war crime.  | If you’re ever in Vietnam go to the war museums in Hanoi and Saigon and see the exhibits about how horrible this is | Now imagine what it did to the locals who were just trying to live their lives before this act of naked American imperial aggression.  | It was manufactured in a small town in Ontario Canada the water table in Elmira Ontario is still poisoned today.
+
+
+[link](https://www.observerxtra.com/why-you-still-cant-drink-the-local-water-in-elmira/)",3955,science,2026-03-29 14:05:45
+"Countries with stronger precarious manhood beliefs (being a “real man” is something that requires constant demonstration through behavior and achievement) tend to have lower national happiness, but also lower GDP, lower life expectancy, lower social support, and heightened perceptions of corruption.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+
+---
+
+**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
+
+---
+
+User: u/mvea  
+Permalink: https://www.psypost.org/countries-holding-stronger-precarious-manhood-beliefs-tend-to-be-less-happy-study-finds/
+
+---
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Here are the results: 
+
+[Table - Precarious Manhood x Happiness](https://imgur.com/a/kfOOpgv) | Gender roles are a prison.  Who the hell wants to live in a cage?   | [removed] | An analysis of the World Happiness Report data and a global study of gender beliefs found that countries with stronger precarious manhood beliefs tend to have lower national happiness, but also lower GDP, lower life expectancy, lower social support, and heightened perceptions of corruption. The paper was published in Social Science &amp; Medicine.
+
+Precarious manhood beliefs are based on the idea that manhood is a social status that must be earned and can easily be lost. According to this perspective, being a “real man” is seen as something that requires constant demonstration through behavior and achievement. These beliefs suggest that masculinity is more fragile and socially judged than femininity. Because of this perceived fragility, men feel pressure to prove their masculinity in public and social situations.
+
+Research shows that threats to masculinity can lead some men to react with increased competitiveness, aggression, or risk-taking. Precarious manhood beliefs are often reinforced by cultural norms that associate masculinity with strength, independence, and dominance. When men feel that these expectations are not met, they may experience anxiety, shame, or social insecurity. Studies have also linked strong precarious manhood beliefs to support for traditional gender roles.
+
+The authors suggest that rigid gender norms harm national economies by steering men away from essential “feminine” fields, like caregiving and education, and restricting women’s workforce participation. Furthermore, the pressure to appear tough drives risky health behaviors (like smoking and heavy drinking) and discourages emotional vulnerability, ultimately lowering life expectancy and eroding community trust. The researchers also noted that precarious masculinity ideals are often exploited by authoritarian “strongman” political leaders, which can deepen societal polarization and fragmentation.
+
+For those interested, here’s the link to the peer reviewed journal article: 
+
+https://www.sciencedirect.com/science/article/pii/S0277953625010834",8518,science,2026-03-29 07:18:51
 "Global human population has surpassed Earth’s sustainable carrying capacity. The Earth cannot sustain the future human population, or even today’s, without a major overhaul of socio-cultural practices for using land, water, energy, biodiversity, and other resources.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -269,7 +310,7 @@ Permalink: https://iopscience.iop.org/article/10.1088/1748-9326/ae51aa
 
 I'm sure the leaders of the world will be getting right on with that | We produced more then enough food and supplies for liveing 
 
-We just have ~100 people who think they deserve it all for themselves | Authored by Thomas Malthus | I would buy regionally, but pretty skeptical globally.",741,science,2026-03-29 17:45:08
+We just have ~100 people who think they deserve it all for themselves | Authored by Thomas Malthus | I would buy regionally, but pretty skeptical globally.",1081,science,2026-03-29 17:45:08
 Study shows that including images of the corresponding living animals next to meat dishes on a British university cafeteria menu increases customers' selection of vegetarian meals. The odds of choosing vegetarian meals rose by 22% during the intervention period.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -289,9 +330,9 @@ In controlled experiments, participants shown identical animals (like cows or go
 
 This cognitive shift reduces moral discomfort and helps reconcile the contradiction between caring about animals and consuming them.
 
-So, it suggests that meat consumption relies on cognitive biases rather than on a factual, objective understanding of ethology and neurobiology: non-human animals, like us, and especially those we eat, are conscious, sentient, and capable of suffering. | As someone who largely eats poultry and fish, I can't imagine it's quite the same effect. Cows and pigs are cuter.  | It does seem like many unethical choices people make are a result of conditioning, confronted with reality in its naked form we tend to act differently. | Hey I know - how about we show pictures of the animal's face as they're being slaughtered next to the meat dishes?
+So, it suggests that meat consumption relies on cognitive biases rather than on a factual, objective understanding of ethology and neurobiology: non-human animals, like us, and especially those we eat, are conscious, sentient, and capable of suffering. | As someone who largely eats poultry and fish, I can't imagine it's quite the same effect. Cows and pigs are cuter.  | Hey I know - how about we show pictures of the animal's face as they're being slaughtered next to the meat dishes?
 
-That would be an interesting study.",180,science,2026-03-29 19:08:16
+That would be an interesting study. | It does seem like many unethical choices people make are a result of conditioning, confronted with reality in its naked form we tend to act differently.",532,science,2026-03-29 19:08:16
 New study confirms 'private solution trap' in addressing climate change. Wealthy prefers private (adaptation) solutions to protect themselves rather than supporting public (mitigation) solutions. Such behavior worsens wealthy inequality and leave poor unprotected.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -311,7 +352,7 @@ One of the main goals of international climate change negotiations is to distrib
 
 **Abstract**:
 
-Collective action problems emerge when individual incentives and group interests are misaligned, as in the case of climate change. Individuals involved in these problems are generally considered to have two options: contribute toward public solutions such as global warming mitigation or free ride. However, many collective action problems today involve a third option of investing in a “private solution” such as local adaptation. The availability of this third option can lead to a private solution trap whereby private solutions are adopted, collectively optimal public solutions are not provided, and existing inequalities are exacerbated. We investigated the private solution trap with a collective action game featuring private and public solutions, wealth inequality determined by luck or merit, and participants from 34 countries. We found that the joint existence of private solutions and wealth inequality had a consistent effect across countries: Participants given a higher endowment adopted private solutions almost twice as often as those given a lower endowment, regardless of whether it was determined by luck or merit, and contributed proportionally less toward public solutions. Wealth inequality increased in every country and those given lower endowments were often left unprotected as public solutions were not provided. Across countries, cultural values of hierarchy and harmony were associated with preferences for private and public solutions, respectively. We also identified two universal pathways toward public solution provision: early contributions and conditional cooperation. Our findings highlight the ubiquity of the private solution trap, its cultural underpinnings, and its potential consequences for global collective action problems.",4799,science,2026-03-29 01:20:52
+Collective action problems emerge when individual incentives and group interests are misaligned, as in the case of climate change. Individuals involved in these problems are generally considered to have two options: contribute toward public solutions such as global warming mitigation or free ride. However, many collective action problems today involve a third option of investing in a “private solution” such as local adaptation. The availability of this third option can lead to a private solution trap whereby private solutions are adopted, collectively optimal public solutions are not provided, and existing inequalities are exacerbated. We investigated the private solution trap with a collective action game featuring private and public solutions, wealth inequality determined by luck or merit, and participants from 34 countries. We found that the joint existence of private solutions and wealth inequality had a consistent effect across countries: Participants given a higher endowment adopted private solutions almost twice as often as those given a lower endowment, regardless of whether it was determined by luck or merit, and contributed proportionally less toward public solutions. Wealth inequality increased in every country and those given lower endowments were often left unprotected as public solutions were not provided. Across countries, cultural values of hierarchy and harmony were associated with preferences for private and public solutions, respectively. We also identified two universal pathways toward public solution provision: early contributions and conditional cooperation. Our findings highlight the ubiquity of the private solution trap, its cultural underpinnings, and its potential consequences for global collective action problems.",4878,science,2026-03-29 01:20:52
 Brain scans reveal how poor sleep fuels negative emotions in alcohol addiction,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -326,35 +367,7 @@ Permalink: https://www.psypost.org/brain-scans-reveal-how-poor-sleep-fuels-negat
 ---
 
 *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Alcohol also contributes to sleep apnea.  It’s a bit a of downward spiral.   
-Quality of sleep and alcohol issues are tightly linked.  | Getting my sleep hygiene in order has been hugely beneficial to my (sometimes fragile) mental health. Biggest change since finding the right meds.",350,science,2026-03-29 12:51:54
-"People on the political right (but not the political left or center) rated the severity of police violence systematically lower, even when evidence was clear there was disproportionate use of force, if the attack was directed against a person with an immigrant background.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
-
----
-
-**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
-
----
-
-User: u/mvea  
-Permalink: https://www.news.uzh.ch/en/articles/media/2026/Police-Violence.html
-
----
-
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | [removed] | [removed] | How many more times will it be scientifically established that being right wing is an irrational position | Propaganda working as intended",13806,science,2026-03-28 17:45:09
-A single dose of a new RNA based rabies vaccine given to puppies and kittens at 12weeks old provided complete protection against rabies for over 3 years with no serious adverse effects potentially eliminating the need for yearly boosters.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
-
----
-
-**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
-
----
-
-User: u/Specialist_Ninja2398  
-Permalink: https://pmc.ncbi.nlm.nih.gov/articles/PMC12737566/
-
----
-
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Great, now we're gonna have a bunch of autistic house pets to go with the gay frogs.  | There are already several 3 year rabies vaccines for dogs and cats. At least one of them (I have no clue which one my vet uses) is less than $100. I don’t know if there is an additional benefit to this new mRNA one, but I thought that was worth mentioning because the headline is misleading.",368,science,2026-03-29 11:30:42
+Quality of sleep and alcohol issues are tightly linked.  | Getting my sleep hygiene in order has been hugely beneficial to my (sometimes fragile) mental health. Biggest change since finding the right meds.",412,science,2026-03-29 12:51:54
 "Implantable 'living pharmacy': tiny device, implantable and engineered with cells, produces a combination of different medicines, can function continuously inside the body for several weeks, potentially aiding in the treatment of chronic diseases",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -377,8 +390,8 @@ Permalink: https://news.northwestern.edu/stories/2026/03/implantable-living-phar
 &gt;With more work, living pharmacies hold the potential to treat chronic conditions with a single, long-lasting therapy — bypassing the need for patients to carry, inject or remember to take medications.
 
 [Design of a wireless, fully implantable platform for in-situ oxygenation of encapsulated cell therapies: Device](https://www.cell.com/device/abstract/S2666-9986(26)00058-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS266699862600058X%3Fshowall%3Dtrue) | This makes me think of the book parasite 
- ",96,science,2026-03-29 17:55:50
-"Scientists discover ""overflow valve"" in cells linked to Parkinson's Disease.Researchers have uncovered how a mysterious ion channel helps cells break down waste, opening new possibilities for treating Parkinson's disease.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+  | Elizabeth Holmes seething right now ",156,science,2026-03-29 17:55:50
+A single dose of a new RNA based rabies vaccine given to puppies and kittens at 12weeks old provided complete protection against rabies for over 3 years with no serious adverse effects potentially eliminating the need for yearly boosters.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
 
@@ -386,12 +399,26 @@ Permalink: https://news.northwestern.edu/stories/2026/03/implantable-living-phar
 
 ---
 
-User: u/Appropriate-Push-668  
-Permalink: https://www.pnas.org/doi/10.1073/pnas.2503909123
+User: u/Specialist_Ninja2398  
+Permalink: https://pmc.ncbi.nlm.nih.gov/articles/PMC12737566/
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.*",773,science,2026-03-29 04:29:31
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Great, now we're gonna have a bunch of autistic house pets to go with the gay frogs.  | There are already several 3 year rabies vaccines for dogs and cats. At least one of them (I have no clue which one my vet uses) is less than $100. I don’t know if there is an additional benefit to this new mRNA one, but I thought that was worth mentioning because the headline is misleading.",412,science,2026-03-29 11:30:42
+"People on the political right (but not the political left or center) rated the severity of police violence systematically lower, even when evidence was clear there was disproportionate use of force, if the attack was directed against a person with an immigrant background.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+
+---
+
+**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
+
+---
+
+User: u/mvea  
+Permalink: https://www.news.uzh.ch/en/articles/media/2026/Police-Violence.html
+
+---
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | [removed] | [removed] | How many more times will it be scientifically established that being right wing is an irrational position | Propaganda working as intended",13849,science,2026-03-28 17:45:09
 "Covid-19 pandemic and vaccination has led to generation of widespread immunity against related sarbecoviruses, creating an immunological barrier to novel sarbecovirus emergence in humans",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -405,7 +432,21 @@ Permalink: https://www.nature.com/articles/s41467-026-69988-8
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.*",79,science,2026-03-29 16:39:31
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | Very interesting!",125,science,2026-03-29 16:39:31
+"Scientists discover ""overflow valve"" in cells linked to Parkinson's Disease.Researchers have uncovered how a mysterious ion channel helps cells break down waste, opening new possibilities for treating Parkinson's disease.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+
+---
+
+**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
+
+---
+
+User: u/Appropriate-Push-668  
+Permalink: https://www.pnas.org/doi/10.1073/pnas.2503909123
+
+---
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.*",801,science,2026-03-29 04:29:31
 "Astronomers detect water vapor in the atmosphere of an exoplanet 120 light-years away, with temperatures exceeding 900 K, a 2026 study finds, providing new insights into atmospheric chemistry and planetary formation, though conditions remain too extreme to support known forms of life",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -419,7 +460,7 @@ Permalink: https://www.nature.com/articles/s41550-026-02815-8
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | They model the atmosphere at 37.5 kbar, even when orbiting a red dwarf for billions of years. That's tens of thousands of times thicker than Earth's atmosphere. The atmospheric loss would be lower for super-Earths in the habitable zone. The atmospheric loss would be lower for super-Earths orbiting a yellow dwarf. It suggests that most super-Earth's aren't suitable for habitability. | So bacteria isn't alive?",250,science,2026-03-29 09:03:17
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | They model the atmosphere at 37.5 kbar, even when orbiting a red dwarf for billions of years. That's tens of thousands of times thicker than Earth's atmosphere. The atmospheric loss would be lower for super-Earths in the habitable zone. The atmospheric loss would be lower for super-Earths orbiting a yellow dwarf. It suggests that most super-Earth's aren't suitable for habitability. | So bacteria isn't alive?",259,science,2026-03-29 09:03:17
 "Audio tapes reveal mass rule-breaking in Milgram’s obedience experiments. Authors suggest that this routine violation of experimental procedures transformed the laboratory into a scene of unauthorized violence, altering our understanding of compliance and coercion.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -433,7 +474,7 @@ Permalink: https://www.psypost.org/audio-tapes-reveal-mass-rule-breaking-in-milg
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | So reading the study, it's actually worse than the initial finds. The study participants routinely violated the study procedures, but one of the procedures they consistently performed properly were the shocks  | Ok, but that didn't really affect the outcome of the study, which we know because *repeated experiments by other teams have the exact same results*. | [deleted] | Wasn't that whole story debunked long ago?",3374,science,2026-03-28 18:10:42
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | So reading the study, it's actually worse than the initial finds. The study participants routinely violated the study procedures, but one of the procedures they consistently performed properly were the shocks  | Ok, but that didn't really affect the outcome of the study, which we know because *repeated experiments by other teams have the exact same results*. | [deleted] | Wasn't that whole story debunked long ago?",3388,science,2026-03-28 18:10:42
 "Increases in Kratom-Related Reports to Poison Centers — National Poison Data System, United States, 2015–2025",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -449,7 +490,7 @@ Permalink: https://www.cdc.gov/mmwr/volumes/75/wr/mm7511a1.htm?s_cid=OS_mm7511a1
 
 *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | I've always thought the powder was idiot proof. Couldn't really OD if you tried. You really gonna eat 30 or 40 grams of raw powder? 
 
-But these new extracts are crazy strong. Not really surprised at this point. | I would recommend reading the whole article. Especially the ending. They take care to say this increase is likely from synthetics, and that the FDA is not trying to schedule leaf powder.  | even with the sketchy synthetic gas station stuff, id say everything is harm reduction compared to the fentanyl analogue/xylazine that is the only other alternative for most people. we lost the war on drugs a long time ago, and we lost bad. | I know this thread is mostly a hatefest on kratom, but I have taken 1 level teaspoon of powder twice a day for 3 years and it has basically completely cured my IBS. I had diarrhea 6 days a week for 30+ years and now taking this I have all normal bowel movements except for like 1 bad flare up about once a year. It’s been a total lifesaver for me and I get no noticeable side effects from it. It honestly doesn’t even feel like much at the dose I take, like some caffeine and chamomile. I also haven’t noticed any tolerance issues, I’ve always taken the same and it works consistently, but maybe that’s because I take a low dose?",547,science,2026-03-29 00:12:28
+But these new extracts are crazy strong. Not really surprised at this point. | I would recommend reading the whole article. Especially the ending. They take care to say this increase is likely from synthetics, and that the FDA is not trying to schedule leaf powder.  | even with the sketchy synthetic gas station stuff, id say everything is harm reduction compared to the fentanyl analogue/xylazine that is the only other alternative for most people. we lost the war on drugs a long time ago, and we lost bad. | I know this thread is mostly a hatefest on kratom, but I have taken 1 level teaspoon of powder twice a day for 3 years and it has basically completely cured my IBS. I had diarrhea 6 days a week for 30+ years and now taking this I have all normal bowel movements except for like 1 bad flare up about once a year. It’s been a total lifesaver for me and I get no noticeable side effects from it. It honestly doesn’t even feel like much at the dose I take, like some caffeine and chamomile. I also haven’t noticed any tolerance issues, I’ve always taken the same and it works consistently, but maybe that’s because I take a low dose?",552,science,2026-03-29 00:12:28
 People with social anxiety experience more meaningful interactions in small groups. Adjusting the social environment to feel more controllable tends to help socially anxious individuals get the most out of their daily social exchanges.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -473,35 +514,7 @@ Socially anxious people tend to worry about being judged, sounding foolish, or b
 
 For those interested, here’s the link to the peer reviewed journal article: 
 
-https://journals.sagepub.com/doi/10.1177/19485506261416010",2725,science,2026-03-28 15:30:52
-"COVID-19 vaccination during pregnancy reduces infant hospitalization risk by 50% in the first two months of life. A study of 146,000 infants also refutes ""immune dysregulation"" claims, finding no increased risk of other infections in babies exposed to the vaccine before birth.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
-
----
-
-**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
-
----
-
-User: u/Sciantifa  
-Permalink: https://publications.aap.org/pediatrics/article-abstract/doi/10.1542/peds.2025-073661/206908/COVID-19-mRNA-Vaccination-in-Pregnancy-and-Risk-of?redirectedFrom=fulltext
-
----
-
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | The ""immune dysregulation"" hypothesis has always been anti-vaxxer nonsense that sounds plausible on the surface, but makes no sense for anyone that is *actually* aware how the immune system or vaccines work. | Is the reduced risk of hospitalisation a result of lower rates of covid infection among the newborns? Or is it a general immune system boost inherited from the mother? | What point in pregnancy should the vaccine be given?",1083,science,2026-03-28 18:13:20
-Efficient Carbon Capture Designer Materials That Could Desorb Below 60 oC | A cleverly redesigned carbon material could make capturing CO2 far cheaper by releasing it with minimal heat.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
-
----
-
-**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
-
----
-
-User: u/thinkB4WeSpeak  
-Permalink: https://www.cn.chiba-u.jp/en/news/press-release_e260326/
-
----
-
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | I want carbon capture to be a reality and somehow save us from ourselves, but I’ve seen research and discussions like this used basically as propaganda to make us feel like we don’t have to change our behavior to deal with climate changes since somehow science will solve the issue before it destroys us.",85,science,2026-03-29 07:56:29
+https://journals.sagepub.com/doi/10.1177/19485506261416010",2745,science,2026-03-28 15:30:52
 Dengue Suppression by Male Wolbachia-Infected Mosquitoes | New England Journal of Medicine,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -526,7 +539,35 @@ Dengue Virus Suppression by Wolbachia-Infected Mosquitoes
 Results
 A total of 393,236 residents lived in the intervention clusters, and 331,192 lived in the control clusters. Adult wild-type A. aegypti populations were suppressed across the intervention clusters. The baseline average abundance of the mosquitoes (number of adult female mosquitoes trapped divided by number of traps) was 0.18 and 0.19 in the intervention and control clusters, respectively; from 3 months after the initiation of the intervention until the end of the 24-month trial period, the average abundance was 0.041 and 0.277, respectively. In the intention-to-treat analysis at 6 months or more, the percentage of residents in the intervention clusters who were dengue-positive was lower than that in the control clusters (354 of 5722 tests [6%] vs. 1519 of 7080 tests [21%]). The protective efficacy of the intervention, calculated as (1−odds ratio)×100, ranged from 71 to 72% with 3 to 12 months or more of wolbachia mosquito exposure, as represented by odds ratios of 0.28 to 0.29.
 Conclusions
-Release of sterile wolbachia-infected male A. aegypti mosquitoes reduced vector populations and the risk of dengue infection in Singapore. (Funded by the Singapore Ministry of Finance and others; ClinicalTrials.gov number, NCT05505682.)",12,science,2026-03-29 17:45:38
+Release of sterile wolbachia-infected male A. aegypti mosquitoes reduced vector populations and the risk of dengue infection in Singapore. (Funded by the Singapore Ministry of Finance and others; ClinicalTrials.gov number, NCT05505682.)",20,science,2026-03-29 17:45:38
+"COVID-19 vaccination during pregnancy reduces infant hospitalization risk by 50% in the first two months of life. A study of 146,000 infants also refutes ""immune dysregulation"" claims, finding no increased risk of other infections in babies exposed to the vaccine before birth.",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+
+---
+
+**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
+
+---
+
+User: u/Sciantifa  
+Permalink: https://publications.aap.org/pediatrics/article-abstract/doi/10.1542/peds.2025-073661/206908/COVID-19-mRNA-Vaccination-in-Pregnancy-and-Risk-of?redirectedFrom=fulltext
+
+---
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | The ""immune dysregulation"" hypothesis has always been anti-vaxxer nonsense that sounds plausible on the surface, but makes no sense for anyone that is *actually* aware how the immune system or vaccines work. | Is the reduced risk of hospitalisation a result of lower rates of covid infection among the newborns? Or is it a general immune system boost inherited from the mother? | What point in pregnancy should the vaccine be given?",1085,science,2026-03-28 18:13:20
+Efficient Carbon Capture Designer Materials That Could Desorb Below 60 oC | A cleverly redesigned carbon material could make capturing CO2 far cheaper by releasing it with minimal heat.,,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
+
+---
+
+**Do you have an academic degree?** We can verify your credentials in order to assign user flair indicating your area of expertise. [Click here to apply](https://www.reddit.com/r/science/wiki/flair/).
+
+---
+
+User: u/thinkB4WeSpeak  
+Permalink: https://www.cn.chiba-u.jp/en/news/press-release_e260326/
+
+---
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.* | I want carbon capture to be a reality and somehow save us from ourselves, but I’ve seen research and discussions like this used basically as propaganda to make us feel like we don’t have to change our behavior to deal with climate changes since somehow science will solve the issue before it destroys us.",92,science,2026-03-29 07:56:29
 "Competition between brain circuits improves information processing efficiency and computational performance, Nature Neuroscience study finds, showing that balanced neural competition enhances adaptability and cognition, offering new insights into how the brain optimizes complex tasks",,"Welcome to r/science! This is a heavily moderated subreddit in order to keep the discussion on science. However, we recognize that many people want to discuss how they feel the research relates to their own personal lives, so to give people a space to do that, **personal anecdotes are allowed as responses to this comment**. Any anecdotal comments elsewhere in the discussion will be removed and our [normal comment rules]( https://www.reddit.com/r/science/wiki/rules#wiki_comment_rules) apply to all other comments.
 
 ---
@@ -540,8 +581,7 @@ Permalink: https://www.nature.com/articles/s41593-026-02205-3
 
 ---
 
-*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.*",53,science,2026-03-29 08:53:39
-Salma (AI),,This is actually gross | Distasteful | Salma is actually hotter than that | [ Removed by Reddit ],341,livewallpapers,2025-11-07 05:46:22
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/science) if you have any questions or concerns.*",52,science,2026-03-29 08:53:39
 Samsung AI vs Apple AI,,"A: nothing to do with agents
 B: buy a pixel ffs | One is done locally in the phone and the other is done in the cloud. 
 Completely different process for different objectives. 
@@ -554,10 +594,21 @@ https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-
 
 So yes apple failed hard on the AI side | You can't really compare Apple and Andriod when it comes to AI functionality. 
 
-I think more importantly, it's clear one is trained on the users existing images and the other is just failing to replace a texture. | Where’s the original face?",2017,AgentsOfAI,2025-12-29 12:14:31
-Freaky AI,,"I hate to admit, I've never heard that joke and I laughed out loud at this stupid shit | That was actually kind of funny | https://preview.redd.it/1w2osf37xqfg1.jpeg?width=1460&amp;format=pjpg&amp;auto=webp&amp;s=8ec0e7774ec864eb3e35ebba06a520e17f1b69d6 | Oh God, old jokes are getting Netflix adaptations now | I chuckled 🤭",2561,FacebookAIslop,2026-01-27 00:44:03
-"""Ai videos are the future"" Ai videos: (tw)",,No Comments (Timeout),179,TeenagersButBetter,2025-08-01 03:28:21
-How we treated AI in 2023 vs 2025,,No Comments (Timeout),30652,ChatGPT,2025-07-11 04:34:00
+I think more importantly, it's clear one is trained on the users existing images and the other is just failing to replace a texture. | Where’s the original face?",2016,AgentsOfAI,2025-12-29 12:14:31
+Freaky AI,,"I hate to admit, I've never heard that joke and I laughed out loud at this stupid shit | That was actually kind of funny | https://preview.redd.it/1w2osf37xqfg1.jpeg?width=1460&amp;format=pjpg&amp;auto=webp&amp;s=8ec0e7774ec864eb3e35ebba06a520e17f1b69d6 | Oh God, old jokes are getting Netflix adaptations now | I chuckled 🤭",2566,FacebookAIslop,2026-01-27 00:44:03
+"""Ai videos are the future"" Ai videos: (tw)",,"**We’d love if you joined the [discord!](https://discord.gg/4qJuz3Af47)**
+
+If you think this post or any comments below it violate our rules report it. If you have any concerns please send a [mod-mail](https://www.reddit.com/message/compose?to=/r/TeenagersButBetter) message so we can take a look at it.  
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/TeenagersButBetter) if you have any questions or concerns.* | What the fuck did I just watch? I felt braincells commiting suicide every second when watching this. | small cat had it coming | erm this is clearly real?!
+
+(/s) | humanity is so fucking doomed",183,TeenagersButBetter,2025-08-01 03:28:21
+How we treated AI in 2023 vs 2025,,"Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636)
+
+You've also been given a special flair for your contribution. We appreciate your post!
+
+*I am a bot and this action was performed automatically.* | Lol this is a really good depiction. These are some crazy times. | This is a work of art. Beautifully done rendition. | This makes me watch to re-watch Whiplash. | JK Simmons is terrifying",30649,ChatGPT,2025-07-11 04:34:00
 [HELP] Is this lady AI or AI enhanced at all?,"I mean no disrespect, this is a genuine question.
 
 TikTok: @katya.clap","#Sentiment: 90% AI
@@ -566,26 +617,65 @@ Number of comments processed: 8
 
 **DISCLAIMER:** Comments sentiment is generated by Gemini 2.0 Flash, not by u/RealOrAI-Bot bot. For more information, check the [RealOrAI-Bot Wiki](https://www.reddit.com/mod/RealOrAI/wiki/realorai-guide#wiki_.1F916_realorai-bot). | There is a famous model with beautiful darkskin like that, but I think this is A.I. | AI, skirt sees to melt when it interacts with the hands 0:04 | everything is ai here, aside from the reference dance video they used. take another video of that account for example. no reference, just a generated image. as of now, fine details like the corset's pattern looks warped and distorted, which doesn't stay consistent throughout the whole video. it's all ai.
 
-https://preview.redd.it/aemqq1jogjeg1.png?width=292&amp;format=png&amp;auto=webp&amp;s=332e123aeb98dd0b5786eb4f83bd5036ca9bf0b2 | AI. Here's ""Kat 'n Chat"" discussing: [https://www.youtube.com/watch?v=XTrTLdSpTRE](https://www.youtube.com/watch?v=XTrTLdSpTRE)",27,RealOrAI,2026-01-20 22:45:40
+https://preview.redd.it/aemqq1jogjeg1.png?width=292&amp;format=png&amp;auto=webp&amp;s=332e123aeb98dd0b5786eb4f83bd5036ca9bf0b2 | AI. Here's ""Kat 'n Chat"" discussing: [https://www.youtube.com/watch?v=XTrTLdSpTRE](https://www.youtube.com/watch?v=XTrTLdSpTRE)",26,RealOrAI,2026-01-20 22:45:40
 Best free AI porn videos generators,Guys what are the best full AI porn videos generators with prompts.,"https://eternalai.org/?r=komtw556z | easy..
 
-https://preview.redd.it/e9jwwdmnwulg1.png?width=1201&amp;format=png&amp;auto=webp&amp;s=5cd9f1b498a8129cb607273f72dc788b9a5204bf | uncensoredfaceswap dot com is very good. i love it. | https://eternalai.org/?r=fq85n | [**You'll find the best generators here**](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwPO62LgmD7pYuiFj9XQiyZf2smlZIjRNG3D_b_NUzVcM_grFQ--RWNCY8x11BE8oIaJDQX4R29k85/pubhtml) I find that achieving consistency in the images without weird distortions is the hardest thing to get, but the best rated ones really deliver in that front. You'll be able to generate videos without glitches or changes in the images. ",100,CharacterAIrevolution,2026-02-23 18:06:03
+https://preview.redd.it/e9jwwdmnwulg1.png?width=1201&amp;format=png&amp;auto=webp&amp;s=5cd9f1b498a8129cb607273f72dc788b9a5204bf | uncensoredfaceswap dot com is very good. i love it. | https://eternalai.org/?r=fq85n | [**You'll find the best generators here**](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwPO62LgmD7pYuiFj9XQiyZf2smlZIjRNG3D_b_NUzVcM_grFQ--RWNCY8x11BE8oIaJDQX4R29k85/pubhtml) I find that achieving consistency in the images without weird distortions is the hardest thing to get, but the best rated ones really deliver in that front. You'll be able to generate videos without glitches or changes in the images. ",102,CharacterAIrevolution,2026-02-23 18:06:03
 Guys Uncensored AI for free ai undress which gives free credit daily(new in 2026)?,"Eternal AI is lowkey insane lol, the accuracy actually caught me off guard ngl 
 
 \- fully uncensored nude gen, img &amp; video generation, 3 free credits a day
 
 \- the vibe mode presets are chefs kiss, just pick ""remove clothes"" or ""string bikini""...","[deleted] | https://eternalai.org/?r=us07g | Eternal AI gives you 3 free daily credits, just $1 for new users, supports img and video, allow nudity content
 
-i used [this vibe mode named “slingbikini”](https://eternalai.org/image/9129920?r=2c3n3) to generate sexy bikini | https://eternalai.org/?r=pcvk0 | https://eternalai.org/?r=pcvk0",88,AIGeneratedArt,2026-03-05 20:14:32
+i used [this vibe mode named “slingbikini”](https://eternalai.org/image/9129920?r=2c3n3) to generate sexy bikini | https://eternalai.org/?r=pcvk0 | https://eternalai.org/?r=pcvk0",81,AIGeneratedArt,2026-03-05 20:14:32
 AI bro prompts softcore AI porn of a real woman,,"You mean to tell me AI bros have some questionable views on consent?
 
-\*Surprised Pikachu\* | That last commenter is really surprised?  REALLY?  Considering ALL the talk there’s been about this.  How the FUCK did they not know this was a thing until now? | Outside the obvious bit, the telltale giveaway of lots of AI images is the line of sight. Characters don't look at anything in particular. Since eye contact in images is inferred based on the illusion of 3d (which AI can't understand because that exists outside of the concrete images), I don't see AI really nailing that. | Well, I'm glad people are calling this creep out. | Not surprising as they've been using it to make nonconsensual porn for a while and it'll only get worse",688,antiai,2025-07-02 05:37:37
+\*Surprised Pikachu\* | That last commenter is really surprised?  REALLY?  Considering ALL the talk there’s been about this.  How the FUCK did they not know this was a thing until now? | Outside the obvious bit, the telltale giveaway of lots of AI images is the line of sight. Characters don't look at anything in particular. Since eye contact in images is inferred based on the illusion of 3d (which AI can't understand because that exists outside of the concrete images), I don't see AI really nailing that. | Well, I'm glad people are calling this creep out. | Not surprising as they've been using it to make nonconsensual porn for a while and it'll only get worse",689,antiai,2025-07-02 05:37:37
 Family friend sent me AI generated response to news of my father passing away.,"I'm aware that AI is a common topic on here,  but I feel like I had to send this somewhere. My father passed away in my arms last night of a heart attack, and I was requested by my mother to send an old friend of his the news.
 
 His first response seemed fine, then he asked me when the funeral will be and if Dad suffered to which I responded.
 
-He then has the absolute audacity to send me a straight up generated response to my father's death. Not even the common courtesy of talking to me as an actual goddamn human. I'm livid.",No Comments (Timeout),81491,mildlyinfuriating,2026-03-15 14:29:26
-Google's new AI algorithm might lower RAM prices,https://arstechnica.com/ai/2026/03/google-says-new-turboquant-compression-can-lower-ai-memory-usage-without-sacrificing-quality/,No Comments (Timeout),40715,pcmasterrace,2026-03-27 17:52:24
+He then has the absolute audacity to send me a straight up generated response to my father's death. Not even the common courtesy of talking to me as an actual goddamn human. I'm livid.","OP has pinned a [comment](https://reddit.com/r/mildlyinfuriating/comments/1ru97y3/family_friend_sent_me_ai_generated_response_to/oajrow5/) by u/Hendothermic:
+
+&gt; Thank you everyone for the kind words and condolences.
+
+&gt; &gt; I thought I'd clear up a couple things that have been on my mind and that I've seen in the replies.
+
+&gt; &gt; ""Why have you come onto Reddit instead of mourning your father and being with your family?""
+
+&gt; &gt; I was just so absolutely dumbfounded at these messages that I felt like if I didn't share them, it would have weighed even harder on me. That and I'm stuck in a waiting game as I gotta wait for confirmations and the other processes for a death of a loved one. Its a lot for me to take in right now, forgive me, so I'm kinda just sat on my sofa trying to process it all.
+
+&gt; &gt; 
+""Are you SURE it's AI?""
+If I wasn't certain I wouldn't have made the post, but I'll elaborate. 
+
+&gt; &gt; The messages were sent within a couple seconds of each other. They have a lot of AI mannerisms, to the point where I genuinely expected ""And honestly, you're so real for that"" in there somewhere. It also just doesn't sound human, I can't really say much more than that.
+
+&gt; &gt; 
+I've still not quite fully come to terms with Dad's passing, it's not even been 24 hours after all, but he never wanted us to just sit and mope and cry, he would want me and my mother to keep moving, and make him proud.
+
+&gt; &gt; Thank you all again.
+
+^([What is Spotlight?](https://developers.reddit.com/apps/spotlight-app)) | „Just cremation and done, straight to the point” 😭😭😭 | “Just cremation and done” is CRAZY work omg  | No spectacle, no fuss, no performance. Just copy pasted, AI messages. No less. Straight to the point, like you said. That's very him. | Not only is it AI but it’s also a fucking terrible reply to such thing. ",81493,mildlyinfuriating,2026-03-15 14:29:26
+Google's new AI algorithm might lower RAM prices,https://arstechnica.com/ai/2026/03/google-says-new-turboquant-compression-can-lower-ai-memory-usage-without-sacrificing-quality/,"Welcome to the PCMR, everyone from the frontpage! Please remember:
+
+1 - You too can be part of the PCMR. It's not about the hardware in your rig, but the software in your heart! Age, nationality, race, gender, sexuality, religion, politics, income, and PC specs don't matter! If you love or want to learn about PCs, you're welcome!
+
+2 - If you think owning a PC is too expensive, know that it is much cheaper than you may think. Check [http://www.pcmasterrace.org](http://www.pcmasterrace.org) for our famous builds and feel free to ask for tips and help here!
+
+3 - Consider supporting the folding@home effort to fight Cancer, Alzheimer's, and more, with just your PC! [https://pcmasterrace.org/folding](https://pcmasterrace.org/folding)
+
+4 - Need some new hardware? Check out this ASUS x PCMR Worldwide giveaway with GPUs, RAM, Motherboards, etc, up for grabs for a total of 18 lucky winners: https://www.reddit.com/r/pcmasterrace/comments/1roo701/worldwide_giveaway_comment_in_this_thread_to_join/
+
+We have a Daily Simple Questions Megathread for any PC-related doubts. Feel free to ask there or create new posts in our subreddit! | so now we're just gonna get LLMs 6x the size for the same memory usage | Can they apply what they learned to Chrome? | Again, this is not going to make the price go down. Some shitty influencers are trying to push this narratives for views and upvotes.
+
+The production for this year and next year are already booked up. OpenAI purchased 40% of world production for the next couple of years last October. | Guys this tweet is COMPLETELY misleading. Neither global memory usage nor speed will be reduced by a factor of 6 or 8 respectively. 
+
+The memory usage reported is with respect to the KV cache of transformers. The ratio of KV-cache to model depends on the exact usage profile (e.g. multi-user long conversations vs short single-user converstaions) and transformer architecture (e.g. modern hybrid attention networks like Qwen 3.5 or traditional full softmax attention architectures). Additionally, the factor 6 reported by the tweet is also wrong, as this compares to full-precision KV caches (16) bit, and not to current SOTA KV-cache quantization algorithms (it is more like a factor of 1.2-2 better there). 
+
+Regarding the speed-up, they don't profile end-to-end, but just the QK\^T calculation, and their baseline is extremely unoptimized. 
+
+Source: reading their actual paper [https://openreview.net/forum?id=tO3ASKZlok](https://openreview.net/forum?id=tO3ASKZlok)",40747,pcmasterrace,2026-03-27 17:52:24
 [OTHER] Fired from Warhorse Studios and replaced with AI,"Hey everyone,
 
 My name is Max H, and I've been working at Warhorse Studios since July 2022 as a Czech&gt;English translator and editor. I primarily worked on KCD2 and its DLCs, including dialogues, quest logs, item names, and various other things, as well as some occasional marketing materials here and there. Simply put, if you've ever played KCD2 in English, you've quite likely seen my work. 
@@ -609,9 +699,19 @@ While I can't legally confirm or deny whether or not Warhorse is working on anyt
 I'm going to go out and touch some grass for a while, but will check back in later and answer some questions.
 Thanks for reading everyone and all the best &lt;3
 
-EDIT 2: PLEASE don't harass anyone from WHS or review bomb their games on Steam, that isn't my intention at all. All I want is for people to be more informed about what's going on it the games industry behind closed doors.",No Comments (Timeout),20670,kingdomcome,2026-03-28 14:35:52
-"""Cancel ChatGPT"" movement goes big after OpenAI's latest move",,No Comments (Timeout),73534,technology,2026-02-28 22:48:52
-Gamers react with overwhelming disgust to DLSS 5's generative AI glow-ups,,No Comments (Timeout),24292,technology,2026-03-17 22:09:18
+EDIT 2: PLEASE don't harass anyone from WHS or review bomb their games on Steam, that isn't my intention at all. All I want is for people to be more informed about what's going on it the games industry behind closed doors.","Can you please message our modmail with proof of your former employment please mate? Anything would do, a link to your LinkedIn, photo of employee ID - anything you think would suffice. 
+
+**EDIT:** I can confirm that OP worked at Warhorse for three years and nine months. | Epic employee here. Gutted for you. Truly horrible. We just laid off over 1,000 people last week. Over 20% of the company. These are brutal times. Wishing you well and thank you for your work to make such an amazing game  | Reminder to never ever fool yourself into thinking an employer cares about you | Sadly translation is a profession that is quickly being replaced by algorithms and AI. It's infinitely faster and does the job ""well enough"" for most languages. This has already led to a noticeable decline in the quality of subtitles in shows and movies. | It’s crazy that nowadays, even after creating successful games, the people behind them can still be laid off. The fact that this has become normal is really terrible.",20755,kingdomcome,2026-03-28 14:35:52
+"""Cancel ChatGPT"" movement goes big after OpenAI's latest move",,"Everybody should remember that this is why the free press is important. We'd never know about the deals going on behind the scenes without them.  | Fastest uninstall of my life | [Resist and Unsubscribe](https://www.resistandunsubscribe.com/) | To preempt the folks who'll inevitably claim that OpenAI's contract has safety/surveillance limitations:
+
+
+&gt;In a post on X, Altman claimed that OpenAI's models would not be used for mass surveillance, but that claim was immediately contradicted by a U.S. government official, who said that OpenAI's models would be used for ""all lawful means."" Mass surveillance of American citizens is lawful in ""some scenarios"" as part of the post-9/11 U.S. Patriot Act, which permits mass harvesting of communications meta data, even if some aspects of it have been curtailed in recent years. | Also turn off the ChatGPT extension in Apple Intelligence &amp; Siri settings #cancelchatgpt",73527,technology,2026-02-28 22:48:52
+Gamers react with overwhelming disgust to DLSS 5's generative AI glow-ups,,"My big concern besides the ugly AI look is consistency. Will the AI make a character look different when you see them again in different lighting or if they are muddy, bloody, etc... anything that slightly changes their base look.  | ""we've heard your concerns, and we're going to shovel this shit regardless"" is the response I'm expecting  | ""Gamers react with overwhelming disgust to giant middle finger from industry actively decimating their hobby.""
+
+If the market hadn't been so utterly destroyed to make something so divisive this would have been treated with little more disdain than any existing post-processor filters. But tweaking contrast, adding bloom, injecting SMAA, or even rendering as text didn't increase the cost of GPUs, RAM, and storage multiple times over - then ask you to buy twice as much of it to even make it viable. | I'd rather have my ram and video cards back please. None of us asked for this AI slop bullshit that they keep trying to shove. 
+
+Dear companies. Listen to your customers and not tech bros. None of us want this bullshit.
+ | I don't know who needs to hear this, but AI imagery is freaking ugly.  I've come to instinctively hate the look and feel of it.",24291,technology,2026-03-17 22:09:18
 "Crimson Desert Has Alot Of AI Art But Never Disclosed It, Breaking Steam Policy",,"Welcome to the PCMR, everyone from the frontpage! Please remember:
 
 1 - You too can be part of the PCMR. It's not about the hardware in your rig, but the software in your heart! Age, nationality, race, gender, sexuality, religion, politics, income, and PC specs don't matter! If you love or want to learn about PCs, you're welcome!
@@ -638,8 +738,19 @@ They haven't disclosed the use of denuvo
   
 I'm sensing a pattern | Stop preordering games.
 
-Edit: ""I'm having fun and I pre-ordered it"" okay then this isn't directed at you, I'm not your dad, do what you want",20632,pcmasterrace,2026-03-21 02:33:53
-OpenAI Will Shut Down Sora Video Platform,,No Comments (Timeout),22655,technology,2026-03-25 02:01:44
+Edit: ""I'm having fun and I pre-ordered it"" okay then this isn't directed at you, I'm not your dad, do what you want",20638,pcmasterrace,2026-03-21 02:33:53
+OpenAI Will Shut Down Sora Video Platform,,"The thread's mostly focused on the consumer slop angle, but the bigger story is what this signals about OpenAI's competitive position.
+
+NBC News reports OpenAI has come under ""intense pressure from rival Anthropic,"" whose strategy of skipping image/video gen entirely to focus compute on text and code has been eating their lunch with businesses and developers. Meanwhile WSJ says OpenAI is killing all video model efforts (not just the app, the API too) as they pivot toward a super app combining ChatGPT, Codex, and their Atlas browser.
+
+So... this is OpenAI conceding that a competitor who never bothered with video gen was right about resource allocation, and they're scrambling to refocus ahead of their IPO. The Disney deal ($1B investment + 200 licensed characters) is already dead.
+
+The IP aspect is underreported too. Studio Ghibli's trade group CODA sent them a formal demand to stop using their content for Sora 2 training. Between the copyright pressure, the cost bleed, and Anthropic's competitive gains, keeping Sora alive made zero strategic sense.
+
+* [NBC News - OpenAI shutting down Sora](https://www.nbcnews.com/tech/tech-news/openai-shuttering-sora-video-generating-service-rcna264989)
+* [IndieWire - OpenAI to shut down Sora (citing WSJ)](https://www.indiewire.com/news/breaking-news/openai-shut-down-sora-generative-ai-video-app-1235185950/)
+* [CNBC - OpenAI shutters Sora as company reels in costs](https://www.cnbc.com/2026/03/24/openai-shutters-short-form-video-app-sora-as-company-reels-in-costs.html)
+* [Variety - OpenAI will shut down Sora video platform](https://variety.com/2026/digital/news/openai-shutting-down-sora-video-platform-1236698277/) | Huh.  Maybe Ed Zitron was right and this is costing them money hand over fist with no real path to profitability. | wild that they hyped it for like a year and its already getting shut down. the ai product lifecycle is getting shorter than a goldfish's memory | Maybe the first sign that OpenAI isn't doing as well as they make investors believe. Hopefully this is the beginning of the end. | oh no now where will i get videos of dogs farting to the moon.",22662,technology,2026-03-25 02:01:44
 "AIs can’t stop recommending nuclear strikes in war game simulations - Leading AIs from OpenAI, Anthropic, and Google opted to use nuclear weapons in simulated war games in 95 per cent of cases",,"Nobody thought to make them play tic tac toe a bunch of times first?
 
 Edit to add: Anyone who doesn't know the reference, go watch WarGames. | Well this is just fine. No troubling examples from the world of fiction as to why this is problematic at all. | A strange game.  The only winning move is not to play. | well stop giving them Gandhi's AI  | Study link: https://arxiv.org/abs/2602.14740
@@ -656,21 +767,27 @@ Here we present findings from a crisis simulation in which three frontier large 
 
 
 &gt;We argue that AI simulation represents a powerful tool for strategic analysis, but only if properly calibrated against known patterns of human reasoning. Understanding how frontier models do and do not imitate human strategic logic is essential preparation for a world in which AI increasingly shapes strategic outcomes",36280,technology,2026-02-25 19:33:33
-Burger King will use AI to check if employees say ‘please’ and ‘thank you’ | AI chatbot ‘Patty’ is going to live inside employees’ headsets.,,"Welcome to Burger King… I love you. | AI is massive overkill to just detect those words. I guess they like wasting money. | I’d rather a genuine conversation with someone than forced corporate speak. | This is dystopian as hell. | As a customer, that’s creepy af",22332,technology,2026-02-26 19:24:57
+Burger King will use AI to check if employees say ‘please’ and ‘thank you’ | AI chatbot ‘Patty’ is going to live inside employees’ headsets.,,"Welcome to Burger King… I love you. | AI is massive overkill to just detect those words. I guess they like wasting money. | I’d rather a genuine conversation with someone than forced corporate speak. | This is dystopian as hell. | As a customer, that’s creepy af",22336,technology,2026-02-26 19:24:57
 "Steve Wozniak says he's ""disappointed a lot"" by AI and rarely uses it",,"He forgot to add ""make no mistakes"" at the end of his prompt | “Microsoft CEO Satya Nadella said the launch of ChatGPT was like going from the bicycle to the steam engine.”
 
 This dumbshit thinks bikes were invented before steam engines. | Not really a surprise. He was known for extreme efficiency in design, coming up with clever hacks to minimise chip counts, and producing very compact code in constrained systems. He liked showing off the clever stuff he did to other enthusiasts, and sharing ideas at Homebrew for example, and he was lucky enough to do well out of it. I can see how AI takes away something of the pleasure of this human achievement for many. His philosophy is the opposite to that of generative AI. | From the Woz himself, friends! | &gt; Wozniak admitted that everything gets better, but he's seen no signs yet that ""we understand well enough how the brain works to get to that point that it replaces the human; has emotions; cares about things; wants to help others; wants to be a good person.""
 
-Yeah nobody pushing AI gives a single shit about anything in that sentence beyond ""replaces the human.""",22705,technology,2026-03-24 18:10:07
+Yeah nobody pushing AI gives a single shit about anything in that sentence beyond ""replaces the human.""",22703,technology,2026-03-24 18:10:07
 Disney Exits OpenAI Deal After AI Giant Shutters Sora,,"That was.....quick it was like what 2 months? | Good… The only Sora I want to see from Disney is the guy from Kingdom Hearts. | That is the kind of news that makes the whole AI rush feel a lot less solid than it looked a few months ago. | Maybe the first sign that OpenAI is not doing as well as they make investors believe. Hopefully this is the beginning of the end. | ""You walk away, you don't hear me say
 
 PLEASE Oh baby, don't go""
 
-\- Disney, after hearing they won't have access to Sora",20591,movies,2026-03-25 02:12:37
+\- Disney, after hearing they won't have access to Sora",20597,movies,2026-03-25 02:12:37
+The sky ladder on Qixing Mountain looks like AI,,"Welcome to /r/WoahDude! 
+
+* Check out what counts as ""woahdude material"" in our [**wiki**](https://www.reddit.com/r/woahdude/wiki/index#wiki_woahdude_material).
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/woahdude) if you have any questions or concerns.* | My favorite part of this video is when they show where this ladder leads to and how tall it is | I can feel this in my balls for some reason | That's pretty cool. I'm just in the mood to do literally anything else! | Yup nope",31217,woahdude,2026-02-23 20:38:08
 NVIDIA DLSS 5 is AI slop.,"You loved it on social media, on billboards. Here are the brand new image comparison published by nvidia for the announcement of DLSS 5 ! Prepare for a disaster class.
 ","""They Live"" style glasses that make all the women in real life look ""not-woke"" by ai-prettifying them | Fuck yeah losing 20 frames for gooner filter | Sorry but I’ll take my low poly weird lighting models. | I still cannot believe this is official. Like how. God I want this bubble to pop so badly.  | do you need 4x RTX5090 fot that?
 
-Jokes aside, this is exactly how i predicted genAI will enter gaming, not as full neural-network-games but as layer of details put on classic rendering. If the trend continue, games will only have low poly primitives to keep consistency and what you see will be generated by specialised AI models.",2120,aislop,2026-03-17 02:14:30
+Jokes aside, this is exactly how i predicted genAI will enter gaming, not as full neural-network-games but as layer of details put on classic rendering. If the trend continue, games will only have low poly primitives to keep consistency and what you see will be generated by specialised AI models.",2122,aislop,2026-03-17 02:14:30
 "No thank you, Nvidia.",DLSS 5 adds fake lights if this was an upscaler bringing more definition and sharpness i'd be open to it but it's just a beautify filter that drastically alters art direction. ,"Holy realistic minecraft texture pack Batman | https://preview.redd.it/0pa3hser7ipg1.jpeg?width=656&amp;format=pjpg&amp;auto=webp&amp;s=24e05d8245cd06be43d473586e0d776da714ef17
 
  | you know… all i keep seeing are screenshots, any video game footage of this rendering in real time? probably looks like slop youtube shorts when it’s running
@@ -679,7 +796,7 @@ edit: i found the videos on youtube of the demo, yep, faces sorta morphing in be
 
 https://preview.redd.it/4eonu9ardipg1.jpeg?width=828&amp;format=pjpg&amp;auto=webp&amp;s=59f954f795592485b9aa743e047b287b251c4588
 
-It looks uncanny",3516,pcmasterrace,2026-03-17 05:40:03
+It looks uncanny",3524,pcmasterrace,2026-03-17 05:40:03
 Thanks Nvidia,,"Some info and context, which may seem obvious for some, but you'd be surprised about how often it's been asked:
 
 - This post (the one you are in right now) is tagged as a meme/macro, because it's a meme. This means that the ""DLSS ON"" comments shown on the meme are NOT real, it's a joke by OP. 
@@ -692,20 +809,20 @@ Guess I'll reinclude my orginal comment to the post.
 
 https://preview.redd.it/emru9enm4lpg1.png?width=958&amp;format=png&amp;auto=webp&amp;s=d740bf97725f181c4ee1bb2d869be550ba7e435f | Valentino Rossi, nine-time Grand Prix motorcycle racing World Champion. Nicknamed ""the Doctor"". He is widely considered one of the greatest motorcycle racers of all time.
 
-But he doesn't ride his bike half as well as these mods ride NVIDIA's imaginary artificial dick :) | [removed] | Best meme I've seen about this so far",46159,pcmasterrace,2026-03-17 15:30:02
+But he doesn't ride his bike half as well as these mods ride NVIDIA's imaginary artificial dick :) | [removed] | Best meme I've seen about this so far",46160,pcmasterrace,2026-03-17 15:30:02
 "What the hell is that, NVIDIA?? (Source: Digital Foundry)",,"https://preview.redd.it/nynlm720pgpg1.png?width=1200&amp;format=png&amp;auto=webp&amp;s=177b2c36b56f49f34733ce0e365e5ac8499021e0
 
  | Tbh it looks like a deepfaked face got added over the original.  | https://preview.redd.it/h47nu889lgpg1.png?width=1004&amp;format=png&amp;auto=webp&amp;s=fe96aaafb0c851f55a15efda34f2860a23318523
 
  | https://preview.redd.it/1evopf1qngpg1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=29c223e121ec6e25a799894f59eba8a9c0f120f0
 
-Here, I fixed it for you, Nvidia | Now they’re just fucking with us. ",13801,pcmasterrace,2026-03-17 00:22:31
+Here, I fixed it for you, Nvidia | Now they’re just fucking with us. ",13808,pcmasterrace,2026-03-17 00:22:31
 I hate Nvidia,,"Don't let this distract you from the fact that NVidia has partnered with Palantir for their next chipset. | ""Things we don't need for $500""
 
 
 ***DAILY-DOUBLE*** | Not really. This is just toys. Real stuff is used for high quality propaganda and agentic warfare.  | Built-in OF model filter - release in Fall 26. | Bro why hire artists for making video games anymore. Who needs character design if all of them have the same AI slop face anyways. 
 
-This is horrible and I hope it blows up in Nvidia‘s face for even showing this shit. ",32349,memes,2026-03-17 03:10:52
+This is horrible and I hope it blows up in Nvidia‘s face for even showing this shit. ",32356,memes,2026-03-17 03:10:52
 I work at NVIDIA,,"Doctor: Are you familiar with robotic surgery?
 
 Lunatic: I work at NVIDIA.
@@ -719,8 +836,8 @@ Doctor: OK. So, let me explain what robotic surgery is. | The Dr. replied ""You 
 * What kind of dick surgery was about to take place that inspired this weird selfie?
 * Why does the woman seem more into this when he’s the one posting it?
 * Why does he think NVIDIA is comparable to the medical profession?
-* How does AI marketing make him an authority on robotic surgery?",10912,LinkedInLunatics,2025-09-26 03:20:10
-"$10k in Nvidia, 2 years later⏰","$10,000 in Nvidia just 2 years ago would of turned into $34,900 today 📈 source: The Market Matrix on the Blossom App. I’m still buying and holding my Nvidia. ","It's always easy to figure out what you should have invested in two years ago.  Congratuations.  You're a genius. | Palantir has done in 2 years what SanDisk has done in less than a year | If i had a crystal ball id be a millionaire | Repeat this post in 2-4-6 and 8 years. That would be a better assessment. I bet some of those won’t exist then, and I’m pretty sure Nvidia will still be there.",758,NvidiaStock,2026-01-12 11:07:18
+* How does AI marketing make him an authority on robotic surgery?",10914,LinkedInLunatics,2025-09-26 03:20:10
+"$10k in Nvidia, 2 years later⏰","$10,000 in Nvidia just 2 years ago would of turned into $34,900 today 📈 source: The Market Matrix on the Blossom App. I’m still buying and holding my Nvidia. ","It's always easy to figure out what you should have invested in two years ago.  Congratuations.  You're a genius. | Palantir has done in 2 years what SanDisk has done in less than a year | If i had a crystal ball id be a millionaire | Repeat this post in 2-4-6 and 8 years. That would be a better assessment. I bet some of those won’t exist then, and I’m pretty sure Nvidia will still be there.",762,NvidiaStock,2026-01-12 11:07:18
 NVIDIA CEO: I want my engineers to stop coding,,"Do people actually watch the whole thing before comments? Feel like people just react to OP's title without watching the video. | Investors and shareholders are often blue collar workers.  If companies dont think they need humans...its gonna be funny when they all lose their job, sell their stock to survive...the money pit dries up and they have no employees to pivot.
 
 Going to see a lot of miserable f*ckwit greedy ceos get hung out to dry by their ears. | Not coding makes you a worse code reviewer, straight up.
@@ -729,7 +846,7 @@ It's not like riding a bike, you have to stay sharp.  | So funny all the people 
 
 These traditional skill sets involved in manual coding are on their way out. History will show that we are at the beginning of a massive Industrial Revolution, which will change cognitive labor forever. The vast majority of engineers are not creating novel solutions or even new code, and this is precisely why those that do not adapt will just be automated out of a job. 
 
- | I get where he is coming from, but LLMs are not reliable enough to allow engineers completely forget about coding problems and focus on higher level problems.",120,GenAI4all,2026-03-12 13:03:26
+ | I get where he is coming from, but LLMs are not reliable enough to allow engineers completely forget about coding problems and focus on higher level problems.",123,GenAI4all,2026-03-12 13:03:26
 Announcing NVIDIA DLSS 5,,"Awesome. Nailed that AI OF creator vibe we like to see in gaming. | from fake frames to fake faces | i dont know - the faces start looking like these ai rendered people that try to scam you for your money
 
 it sort of changes the artistic direction? | This is taking things too far IMO. They yassify characters and the entire lighting is changed in some clips. It no longer is just improving the image quality it's actually changing the games themselves. This is closer to those awful fan made edits you'd see on social media. | I'm genuinely confused. In Digital Foundry's video, they say it's basically the same assets, geometry etc?? It's just going through a different form of lighting. And they say it's difficult to argue with that, with what Nvidia is saying. Am I too stupid to understand lighting, geometry in video games but that definitely doesn't look like just lighting to me.
@@ -759,23 +876,23 @@ I haven't been able to find the max sweet spot without crashing yet, but I think
 
 I can vouch for the PNY OC 5070 TI it's such a good card! The price is only going to go up. Def recommend it.","I love what AMD's done with FSR4 but man the rollout is atrociously slow. DLSS really has me by the balls, oh and RTX HDR..... | And here’s the thing, turn on 2x FG  and get free performance. The latency is really low, like 20ms. | Afterburner is a stronger software for making settings changes. More detailed. I’ve used pnys and still went to MSI’s tuner 
 
-PNY is a solid brand they have strong coolers | Yeah, sadly AMDs GPU department always does 2 steps forward and 1 back. | I think Nvidia gpu’s are generally. Better cards.  But their greed ruins them for me and pushed me to team red.  Can’t complain about the nvidia prices if everyone keeps buying them",118,nvidia,2026-01-10 15:13:18
+PNY is a solid brand they have strong coolers | Yeah, sadly AMDs GPU department always does 2 steps forward and 1 back. | I think Nvidia gpu’s are generally. Better cards.  But their greed ruins them for me and pushed me to team red.  Can’t complain about the nvidia prices if everyone keeps buying them",116,nvidia,2026-01-10 15:13:18
 NVIDIA DLSS 5 Gets 84% Dislikes on YouTube as Backlash Grows,News that might not qualify as actual news to anyone who has been paying attention to this over the last couple of days.,"As long as data centers are buying GPUs they don't give a single fuck about what we think | Nvidia is having a “dont you guys have phones?” Moment | despite multiple youtubers proving that the dislike extension is ""pretty accurate"" 
 
 those who dont want to acknowledge the the dislikes, simply will always dismiss the extension saying: ""its a third party extension blah blah blah not at all accurate blah blah blah""
 
  | Calling it DLSS was so stupid and a mistake on their part. This is such a leap from what DLSS originally was.
 
-I think if they had announced this with a completely separate name and kept it as a niche feature you would have had people glazing it because it’s honestly pretty neat in a vacuum but putting this in DLSS feels like they are forcing it down our throat. | ![gif](giphy|V9gjxvLnSSdA4|downsized)",16521,pcmasterrace,2026-03-19 20:31:30
+I think if they had announced this with a completely separate name and kept it as a niche feature you would have had people glazing it because it’s honestly pretty neat in a vacuum but putting this in DLSS feels like they are forcing it down our throat. | ![gif](giphy|V9gjxvLnSSdA4|downsized)",16520,pcmasterrace,2026-03-19 20:31:30
 "'Legitimate targets': Iran issues warning to US tech firms including Google, Amazon, Microsoft, Nvidia - The Times of India",,"Congratulations, you wanted to be part of the military industrial complex and now you are a part of the military industrial complex. | I would have more sympathy for the giant tech companies if their goals weren't to make everything worse for everybody | No, Iran, stop, not Microsoft.  I need to appear online in Teams. How will my employer gaslight me with phishing campaigns if Exchange Online can't fill my outlook inbox with spam?
 
 What will we do if my OneDrive isn't synced to the cloud and I only have local storage? That is barbaric. | You’re saying there a chance AWS AND Outlook might go down again?  Oh no… please don’t do it on a workday.  I won’t be able to increase shareholder value for a few days! | What a convenient excuse to a pump and dump ai bubble to burst. It wasn’t us billionaires that ruined the fake economy it was all iran! 
-I can see it already. Literally every single thing they say is bs lately. And its so obvious because of their track record. Nothing anyone says anymore is the truth its so wild ",16749,technology,2026-03-11 18:18:42
+I can see it already. Literally every single thing they say is bs lately. And its so obvious because of their track record. Nothing anyone says anymore is the truth its so wild ",16746,technology,2026-03-11 18:18:42
 Watch out Nvidia! The Mac gaming scene is reaching never before seen heights...,,"the idea being if it can run cyberpunk at 30 fps then it can run ligher games like minecraft and indie games and sims 4 so on. for some people this is more then enough for the laptop's budget. and the thing's battery lasts for a while | Which is not bad for a passively cooled, light weight, entry level laptop.  | I mean, for a device that’s as thin as a modern smartphone, has zero active cooling, is dead silent and costs less than a 5070ti GPU by itself, that’s pretty impressive is it not? | I tried it on the Neo I have access to, and it was more like 20-25 fps a lot of the time. 
 
 Frame rate wasn’t really the biggest issue though. The lack of memory led to a lot of stuttering, pop in, and inconsistent frame timings. | &gt; and Cyberpunk 2077 ran at around 40 FPS at 1204 x 753, upscaled from 708 x 443.
 
-Doesn't this resolution looks like potato? The Neo has a retina display. 2408x1519.",10758,pcmasterrace,2026-03-23 08:30:17
+Doesn't this resolution looks like potato? The Neo has a retina display. 2408x1519.",10753,pcmasterrace,2026-03-23 08:30:17
 Jensen Huang says gamers are 'completely wrong' about DLSS 5 — Nvidia CEO responds to DLSS 5 backlash,,"![gif](giphy|V9gjxvLnSSdA4)
 
  | Multi-trillion dollar company CEO says nice things about their most recent product so the company stock doesnt go down... ok got it.
@@ -785,7 +902,7 @@ Edit 2: for people who still aren't on the same page ⬇️
 
 https://preview.redd.it/fhco0pl1tspg1.png?width=626&amp;format=png&amp;auto=webp&amp;s=e0f7a28987fc290ce3eee4b713de467919969c51 | “This is different than generative AI; it’s content-control generative AI. That’s why we call it neural rendering”
 
-Holy gaslighting Batman 😭 | The same Jensen who said 5070 = 4090? The same Jensen fucking up our hobby by pricing hardware out of reach? The same Jensen palling around with the military and Palantir? Yeah, fuck him and anything he has to say! | If not AI-Slop then why AI-Slop shaped?",8436,pcmasterrace,2026-03-18 01:19:03
+Holy gaslighting Batman 😭 | The same Jensen who said 5070 = 4090? The same Jensen fucking up our hobby by pricing hardware out of reach? The same Jensen palling around with the military and Palantir? Yeah, fuck him and anything he has to say! | If not AI-Slop then why AI-Slop shaped?",8443,pcmasterrace,2026-03-18 01:19:03
 "Nvidia ""confirms"" DLSS 5 relies on 2D frame data as testing reveals hallucinations",,"Also known as a filter.  | And it looks really, really bad. The ghosting is ridiculous. | Nvidia defending the life out of this so they feel justified that they sunk a titanic amount of money into AI slop garbage | &gt;""It's not a slop filter!""
 
 &gt;""It's not post processing at the frame level. It's generative control at the geometry level.""
@@ -813,26 +930,8 @@ Enjoy your stay and have fun discussing Resident Evil!
 
 Inb4 it ends like this 😹 | https://preview.redd.it/j20al826okpg1.jpeg?width=768&amp;format=pjpg&amp;auto=webp&amp;s=2acbfdb543f55422197ba7546761e28854d9641c
 
-Shamefully stolen from a shitpost sub | https://preview.redd.it/lgwpdnzfljpg1.jpeg?width=672&amp;format=pjpg&amp;auto=webp&amp;s=c5e8329067edfcd0db66c00b65a78f15afd946bc | Looks like amber heard",8259,ResidentEvilCapcom,2026-03-17 10:27:54
-‘This is just a garbage AI Filter’: Nvidia met with criticism for DLSS 5’s ‘photoreal’ graphics alterations | VGC,,"Forget the faces.  Some of the shots, the shadows are just gone.  Starfield, there was some dude wearing a baseball cap which cast a shadow across his face.  DLSS5, the shadow is gone.  Saw it with Oblivion as well.  Building casts a shadow on the road below and the people nearby are casting shadows.  DLSS5 on, shadows are gone (or made invisible on my phone screen I was watching on during lunch) | My biggest issue with this is that it seems to erases a lot of the deliberate lighting choices done by the devs. Like why is this part suddenly so damn [bright](https://youtu.be/4ZlwTtgbgVA?si=2drMHYtr_TkRgaIC&amp;t=311)? Is the AI even going to be good a keeping the lighting consistent from scene to scene or simply put a lazy filter without context? | ""Photoreal graphics"" except that just means studio lighting and a shitty instagram filter.
-
-Like, why would she have three-point lighting in a rainy back alley?  | It's like an early April fools joke. Even in the demo, Grace's face looked different in different scenes because it's just AI slop now.  | Wait, this is real? I thought the before and after image was satire.",6822,Games,2026-03-17 02:12:51
-Jensen Huang says gamers are 'completely wrong' about DLSS 5 — Nvidia CEO responds to DLSS 5 backlash,,"Ahh, the ol' ""blame the consumers"" approach. Surely that will get them to accept DLSS 5. | *""Am I out of touch? No, it's the gamers who are wrong.""*   
-\-Principal Huang | Jensen says, ""it's not post-processing."" 
-
-
-The official nvidia press release says, ""DLSS 5 takes a game’s color and motion vectors for each frame as input"" and, ""all by analyzing a single frame"". Sounds like post-processing to me. | That CEO needs to touch some grass. | &gt; ""All of that is in the control — direct control — of the game developer,"" he said. This is very different than generative AI; it’s content-control generative AI. That’s why we call it neural rendering.""
-
-*neural rendering* LMAO",8030,technology,2026-03-18 03:13:25
-"Ram, SSDs and now nvidia cutting market",,"I've waited 8 years now to upgrade because of all the bullshit. Fuck me I guess? | tbf, this AI craze will definitely affect the Console market, the only positive thing I hope to happen is game is forced to optimize on lower spec, cuz nobody gonna upgrade their PC at this rate. | Blame the corpos so obsessed with their AI slop, they wanna replace replace replace, hell won't be surprised when even basic PC parts cost several thousand dollars even for the cheapest pieces if they weren't already phased out of sale | You will own nothing and be happy.  Your compute will be a subscription service.  Your data will be on their proprietary property. | Off topic but man, haven't seen this meme template in a very long time. And with the right usage too.",41422,Steam,2025-12-18 13:14:46
-Why Nvidia?,By NikTek btw,"Welcome to the PCMR, everyone from the frontpage! Please remember:
-
-1 - You too can be part of the PCMR. It's not about the hardware in your rig, but the software in your heart! Age, nationality, race, gender, sexuality, religion, politics, income, and PC specs don't matter! If you love or want to learn about PCs, you're welcome!
-
-2 - If you think owning a PC is too expensive, know that it is much cheaper than you may think. Check [http://www.pcmasterrace.org](http://www.pcmasterrace.org) for our famous builds and feel free to ask for tips and help here!
-
-3 - Consider supporting the folding@home effort to fight Cancer, Alzheimer's, and more, with just your PC! [https://pcmasterrace.org/folding](https://pcmasterrace.org/folding)
-
-We have a Daily Simple Questions Megathread for any PC-related doubts. Feel free to ask there or create new posts in our subreddit! | Me because I already have a RTX 3060.... | Because money. | hopefully it will be the 12 GB version.... | https://preview.redd.it/konipj1gcwbg1.jpeg?width=718&amp;format=pjpg&amp;auto=webp&amp;s=07208aa34281fd0e9035de86b803fe1d9da5f615
-
-I have no context so Im guessing Nvidia is giving away free 3060's?",32413,pcmasterrace,2026-01-07 14:19:02
+Shamefully stolen from a shitpost sub | https://preview.redd.it/lgwpdnzfljpg1.jpeg?width=672&amp;format=pjpg&amp;auto=webp&amp;s=c5e8329067edfcd0db66c00b65a78f15afd946bc | Looks like amber heard",8261,ResidentEvilCapcom,2026-03-17 10:27:54
+‘This is just a garbage AI Filter’: Nvidia met with criticism for DLSS 5’s ‘photoreal’ graphics alterations | VGC,,No Comments,6817,Games,2026-03-17 02:12:51
+Jensen Huang says gamers are 'completely wrong' about DLSS 5 — Nvidia CEO responds to DLSS 5 backlash,,No Comments,8031,technology,2026-03-18 03:13:25
+"Ram, SSDs and now nvidia cutting market",,No Comments,41413,Steam,2025-12-18 13:14:46
+Why Nvidia?,By NikTek btw,No Comments,32404,pcmasterrace,2026-01-07 14:19:02
