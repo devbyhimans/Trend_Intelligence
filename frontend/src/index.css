@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-slate-950; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-700 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-500; }
+}
+
+@layer utilities {
+  /* Shimmer skeleton */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      theme('colors.slate.800') 25%,
+      theme('colors.slate.700') 50%,
+      theme('colors.slate.800') 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+  }
+  .skeleton-light {
+    background: linear-gradient(
+      90deg,
+      theme('colors.slate.200') 25%,
+      theme('colors.slate.100') 50%,
+      theme('colors.slate.200') 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+  }
+
+  /* Accent gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #e6edf3, #8b949e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gradient-text-light {
+    background: linear-gradient(135deg, #1e293b, #64748b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Accent button gradient */
+  .btn-accent {
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+  }
+  .btn-accent:hover {
+    filter: brightness(1.12);
+  }
+
+  /* Glow ring */
+  .glow-focus:focus-within {
+    box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.2);
+    border-color: #ff4500 !important;
+  }
+}

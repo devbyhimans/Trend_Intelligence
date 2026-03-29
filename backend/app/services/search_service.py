@@ -1,52 +1,40 @@
 from app.db.connection import SessionLocal
 from app.models.search import Search
 from app.utils.logger import log
+from fastapi import HTTPException
 
 
 def search_logic(query: str):
-    """
-    Processes the search query, calculates a basic trend score based on its length,
-    saves the search record to the database, and returns the result.
-
-    Args:
-        query (str): The search query phrase entered by the user.
-
-    Returns:
-        dict: A dictionary containing the query, the computed trend score, and a success message.
-    """
+    # Calculates a trend score for the query and saves it to the DB
     log(f"Search query: {query}")
 
-    db = SessionLocal()
+    try:
+        db = SessionLocal()
 
-    trend_score = len(query)
+        trend_score = len(query)
 
-    new_search = Search(
-        query=query,
-        trend_score=trend_score
-    )
+        new_search = Search(
+            query=query,
+            trend_score=trend_score,
+            region="Earth" 
+        )
 
-    db.add(new_search)
-    db.commit()
-    db.close()
+        db.add(new_search)
+        db.commit()
+        db.close()
 
-    return {
-        "query": query,
-        "trend_score": trend_score,
-        "message": "saved to DB"
-    }
+        return {
+            "query": query,
+            "trend_score": trend_score,
+            "message": "saved to DB"
+        }
+    except Exception as e:
+         raise HTTPException(status_code=500, detail=str(e))
 
 
+#ML processing data
 def call_ml(query: str):
-    """
-    Simulates a call to a machine learning engine to process the search query
-    and return a trend prediction along with a confidence score.
-
-    Args:
-        query (str): The search query to be analyzed.
-
-    Returns:
-        dict: A simulated response containing a dummy trend and a mock confidence score.
-    """
+    # Simulates an ML prediction returning a dummy trend and score
     # Simulated machine learning engine response (placeholder for real ML model)
     return {
         "trend": "dummy trend",
@@ -55,12 +43,7 @@ def call_ml(query: str):
 
 # reads all data from database and returns it as JSON
 def get_all_searches():
-    """
-    Retrieves all past search queries and their associated trend scores from the database.
-
-    Returns:
-        list: A list of dictionaries representing all saved search records in JSON-like format.
-    """
+    # Retrieves all past search queries from the DB
     db = SessionLocal()
 
     data = db.query(Search).all()
@@ -77,3 +60,39 @@ def get_all_searches():
     return result
 
 
+def get_search_by_id(search_id: int):
+    # Fetches a specific search record by its DB ID
+    db = SessionLocal()
+
+    data = db.query(Search).filter(Search.id == search_id).first()
+
+    db.close()
+
+    if not data:
+        raise HTTPException(status_code=404, detail="Search not found")
+
+    return {
+        "id": data.id,
+        "query": data.query,
+        "trend_score": data.trend_score
+    }
+
+def delete_search(search_id: int):
+    # Removes a specific search record from the DB by ID
+    try:
+        db = SessionLocal()
+
+        data = db.query(Search).filter(Search.id == search_id).first()
+
+        if not data:
+            raise HTTPException(status_code=404, detail="Search not found")
+
+        db.delete(data)
+        db.commit()
+
+        db.close()
+
+        return {"message": "deleted"}
+
+    except Exception as e:
+         raise HTTPException(status_code=500, detail=str(e))
