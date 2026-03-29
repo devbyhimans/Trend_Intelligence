@@ -1,4 +1,5 @@
 # end-to-end processing
+
 from ml_engine.preprocessing.pipeline import PreprocessingPipeline
 from ml_engine.sentiment.inference import SentimentInference
 
@@ -9,6 +10,7 @@ from ml_engine.topic_modeling.labeling import TopicLabeler
 from ml_engine.trend_detection.velocity import VelocityCalculator
 from ml_engine.trend_detection.acceleration import AccelerationCalculator
 from ml_engine.trend_detection.scoring import TrendScorer
+
 
 class TrendPipeline:
 
@@ -26,14 +28,18 @@ class TrendPipeline:
 
     def run(self, raw_texts, prev_counts=None, prev_velocities=None):
 
+        # ⚠️ handle empty input
+        if not raw_texts:
+            return []
+
         normalized_texts = []
         sentiments = []
 
         # 🔹 STEP 1: Preprocessing + Sentiment
         for text in raw_texts:
-            processed = self.preprocessor.process(text)
+            processed = self.preprocessor.clean_text(text)
 
-            norm_text = " ".join(processed["normalized"])
+            norm_text = processed
             normalized_texts.append(norm_text)
 
             sentiment = self.sentiment_model.analyze(text)
@@ -84,12 +90,15 @@ class TrendPipeline:
                 "volume": volume,
                 "velocity": velocity,
                 "acceleration": acceleration,
-                "sentiment": avg_sentiment,
-                "score": score
+                "sentiment": round(avg_sentiment, 3),
+                "score": round(score, 3)
             })
 
+        # 🔹 STEP 7: Sort by score
         return sorted(results, key=lambda x: x["score"], reverse=True)
-        
-    def run_pipeline(texts):
-        pipeline = TrendPipeline()
-        return pipeline.run(texts)    
+
+
+# 🔹 Optional helper (safe to keep)
+def run_pipeline(texts):
+    pipeline = TrendPipeline()
+    return pipeline.run(texts)

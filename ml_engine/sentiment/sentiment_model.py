@@ -1,6 +1,10 @@
 from nltk.sentiment import SentimentIntensityAnalyzer
-# import nltk 
-# nltk.download('vader_lexicon')
+import nltk
+
+try:
+    nltk.data.find('sentiment/vader_lexicon.zip')
+except LookupError:
+    nltk.download('vader_lexicon')
 
 class SentimentModel:
 
