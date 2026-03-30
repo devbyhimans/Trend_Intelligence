@@ -11,7 +11,7 @@ class TopicLabeler:
         topic_labels = {}
 
         for label, docs in cluster_map.items():
-            vectorizer = TfidfVectorizer()
+            vectorizer = TfidfVectorizer(stop_words='english')
             X = vectorizer.fit_transform(docs)
 
             scores = X.sum(axis=0).A1
