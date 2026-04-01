@@ -40,6 +40,37 @@ We utilize an orchestrated blend of real-time caching, asynchronous workers, and
 
 ---
 
+## 📂 Project Structure
+
+```text
+trend-intelligence-system/
+├── backend/                  # FastAPI ASGI Backend
+│   ├── app/                  # Main Application logic (Routes, Services, Models)
+│   └── worker.py             # Redis Queue Background Daemon
+├── data_pipeline/            # Extract, Transform, Load (ETL) logic
+│   ├── collectors/           # Data ingestion for Reddit, NewsAPI, and HackerNews
+│   ├── loaders/              # PostgreSQL database sync logic
+│   ├── processors/           # Regex cleaning and text normalization
+│   └── schedulers/           # cron_jobs.py hourly triggers
+├── database/                 # Structured Persistence schemas
+│   └── postgres/             # schema.sql database configuration
+├── frontend/                 # React + Vite UI Dashboard
+├── ml_engine/                # Core AI Engine (PyTorch, scikit-learn, NLTK)
+│   ├── pipelines/            # ml_runner.py main execution orchestrator
+│   ├── preprocessing/        # Unified text standardizations
+│   ├── region_detection/     # spaCy-based location tag extraction
+│   ├── sentiment/            # NLTK VADER emotional analytics
+│   ├── topic_modeling/       # KMeans, TF-IDF, HuggingFace sentence-transformers
+│   └── trend_detection/      # Mathematical velocity/acceleration composite scoring
+├── scripts/                  # Helper CLI utilities like clear_db.py
+├── docker-compose.yml        # Multi-container cluster boot configuration
+├── RUN_GUIDE.md              # Startup workflow instructions
+├── DATABASE.md               # Schema reference and Redis lookup documentation
+└── README.md                 # System overview and architecture details
+```
+
+---
+
 ## 🖥️ How To Run This Project Locally
 
 Follow these exact steps to run the complete environment (Databases, Redis, Nginx, ML queue, API, and Frontend).

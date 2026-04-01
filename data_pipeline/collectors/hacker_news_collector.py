@@ -117,7 +117,12 @@ if __name__ == "__main__":
         try:
             from db_loader import DataLoader
             loader = DataLoader()
-            load_df = df.rename(columns={"text": "content", "score": "ups"})
+            load_df = df.rename(columns={
+                "text": "content", 
+                "score": "ups",
+                "datetime_utc": "created_utc"
+            })
+            load_df["num_comments"] = 0
             loader.load_to_postgres(load_df, "reddit_trends")
         except ImportError:
             print("[ERROR] Could not import DataLoader. Saving to CSV instead.")
