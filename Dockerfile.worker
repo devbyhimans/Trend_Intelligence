@@ -1,0 +1,23 @@
+FROM python:3.11-slim
+
+# Install system dependencies required by some ML libraries
+RUN apt-get update && apt-get install -y gcc g++ libpq-dev && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install dependencies
+COPY req-dev.txt .
+RUN pip install --no-cache-dir -r req-dev.txt
+
+# Download required NLTK and SpaCy models specific to the TrendIntelligence pipeline
+RUN python -m spacy download en_core_web_sm
+RUN python -c "import nltk; nltk.download('vader_lexicon'); nltk.download('punkt'); nltk.download('stopwords')"
+
+# Copy project source code
+COPY . .
+
+# Ensure Python can find all internal modules
+ENV PYTHONPATH=/app
+
+# Start the worker daemon
+CMD ["python", "backend/worker.py"]
