@@ -1,8 +1,8 @@
 # Trend Intelligence System
 
-![Trend Intelligence](https://img.shields.io/badge/Status-Active-brightgreen) ![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20Lambda-blue)
+![Trend Intelligence](https://img.shields.io/badge/Status-Active-brightgreen) ![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20Lambda-blue) ![Sources](https://img.shields.io/badge/Data%20Sources-Reddit%20%2B%20NewsAPI%20%2B%20HackerNews-orange)
 
-Trend Intelligence System is a full-stack, distributed engine capable of dynamically measuring and predicting real-time global trends. By leveraging an event-driven architecture with high-speed caching and background Machine Learning workflows, the system instantly calculates the Sentiment, Velocity, and Momentum of topics comprehensively parsed from across the internet (e.g., Reddit, HackerNews).
+Trend Intelligence System is a full-stack, distributed engine capable of dynamically measuring and predicting real-time global trends. By leveraging an event-driven architecture with high-speed caching and background Machine Learning workflows, the system calculates the Sentiment, Velocity, and Momentum of topics parsed from **three complementary sources**: Reddit (social sentiment), NewsAPI (authoritative fresh news), and HackerNews (tech community discourse).
 
 ---
 
@@ -29,8 +29,8 @@ We utilize an orchestrated blend of real-time caching, asynchronous workers, and
 ### 3. **Infrastructure, Databases & Queues**
 ![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-- **PostgreSQL:** Reliable structured warehouse containing `reddit_trends` (raw text details) and `ml_trend_results` (fully computed topic structures).
-- **Redis & Native Custom Worker:** Completely decodes request overhead safely, routing complex ML pipeline lookups seamlessly to background workers (Windows compatible via `brpop`) while caching (TTL: 60s) instant fallback predictions.
+- **PostgreSQL:** Reliable structured warehouse containing `reddit_trends` (unified input from Reddit + NewsAPI + HackerNews) and `ml_trend_results` (fully computed topic structures).
+- **Redis & Native Custom Worker:** Completely decodes request overhead safely, routing complex ML pipeline lookups to background workers (Windows compatible via `brpop`) while caching (TTL: 60s) instant fallback predictions.
 - **Docker Compose:** Streamlines booting the Gateway, PostgreSQL, and Redis in unison.
 
 ### 4. **Modern Frontend**
@@ -50,19 +50,20 @@ Follow these exact steps to run the complete environment (Databases, Redis, Ngin
 - Node.js 18+ & npm
 
 ### Step 1: Environment Setup (.env)
-Create a `.env` file at the root folder of the project. Note the mapped port of 5433 to match Docker properly!
+Create a `.env` file at the root folder of the project:
 ```env
 # PostgreSQL DB config
 DB_USER=postgres
-DB_PASSWORD=123456
-DB_HOST=localhost
+DB_PASSWORD=your_password
+DB_HOST=127.0.0.1
 DB_PORT=5433
 DB_NAME=reddit_db
 
-# Reddit API Credentials (https://www.reddit.com/prefs/apps)
-REDDIT_CLIENT_ID=your_client_id
-REDDIT_CLIENT_SECRET=your_client_secret
+# NewsAPI (primary topic discovery source)
+# Get a free key at https://newsapi.org/register
+NEWS_API_KEY=your_newsapi_key_here
 ```
+> No Reddit OAuth credentials are needed. Reddit is used with its public JSON API for sentiment signals only.
 
 ### Step 2: Boot Infrastructure
 ```bash
@@ -76,7 +77,6 @@ python -m venv venv
 .\venv\Scripts\activate
 pip install -r backend/requirements.txt
 pip install -r req-dev.txt
-pip install praw
 python -m spacy download en_core_web_sm
 ```
 
@@ -180,11 +180,20 @@ Worker["🤖 worker.py\nBlocking BRPOP on 'search_queue'\nRuns full ML TrendPipe
 %% ══════════════════════════════════════════════════════════════════════════
 %% LAYER 5 — ETL DATA PIPELINE (Scheduled, hourly)
 %% ══════════════════════════════════════════════════════════════════════════
-subgraph ETL["🔄 ETL Pipeline  (cron_jobs.py — runs hourly)"]
-    direction LR
-    Collector["reddit_collector.py\nPRAW → Reddit JSON API\nFilters megathreads\nSaves reddit_data.csv"]:::etl
-    Cleaner["raw_to_clean.py\nRegex: strip URLs / emojis\nNormalise casing\nSaves reddit_data_cleaned.csv"]:::etl
-    Loader["db_loader.py\nDataLoader.load_to_postgres()\nUpsert ON CONFLICT post_id"]:::etl
+subgraph ETL["🔄 Hybrid ETL Pipeline  (cron_jobs.py — runs hourly)"]
+    direction TB
+    subgraph Ph1["Phase 1 — Reddit Sentiment"]
+        direction LR
+        Collector["reddit_collector.py\n5 subreddits, hot+new\nExponential backoff\nDedup by post_id"]:::etl
+        Cleaner["raw_to_clean.py\nRegex: strip URLs / emojis\nNormalise casing"]:::etl
+        Loader["db_loader.py\nDataLoader.load_to_postgres()\nUpsert ON CONFLICT post_id"]:::etl
+    end
+    subgraph Ph2["Phase 2 — NewsAPI Topics"]
+        NewsCol["news_collector.py\nHeadlines + topic search\nDirect to DB"]:::etl
+    end
+    subgraph Ph3["Phase 3 — HackerNews Tech"]
+        HNCol["hacker_news_collector.py\nTop + new stories\nDirect to DB"]:::etl
+    end
 end
 Collector --> Cleaner --> Loader
 
@@ -217,8 +226,9 @@ end
 %% EXTERNAL APIs
 %% ══════════════════════════════════════════════════════════════════════════
 subgraph External["🌍 External APIs"]
-    API_Reddit["Reddit/HN JSON API\n(PRAW / direct HTTP)"]:::external
-    API_News["NewsAPI.org\narticles + sentiment"]:::external
+    API_Reddit["Reddit JSON API\n(5 subreddits, sentiment only)\nhot+new, exponential backoff"]:::external
+    API_News["NewsAPI.org\nPrimary topic discovery\n(free tier, NEWS_API_KEY)"]:::external
+    API_HN["HackerNews API\n(Firebase + Algolia)\nNo auth, no rate limits"]:::external
 end
 
 %% ══════════════════════════════════════════════════════════════════════════
@@ -261,12 +271,16 @@ Redis_Queue -->|"BRPOP (blocking pop)"| Worker
 Worker -->|"Extensive NLP & Clustering\nWrite MLTrendResult row"| PG_ML
 
 %% — ETL Pipeline
-Collector -->|"PRAW scrape"| API_Reddit
+Collector -->|"5 subreddits, hot+new"| API_Reddit
 Loader    -->|"Upsert ON CONFLICT post_id"| PG_Raw
+NewsCol   -->|"Headlines + topics"| API_News
+NewsCol   -->|"Direct UPSERT"| PG_Raw
+HNCol     -->|"Top + new stories"| API_HN
+HNCol     -->|"Direct UPSERT"| PG_Raw
 
 %% — ML Engine trigger
 Loader    -->|"On ETL success\ntriggers ml_runner.py"| ML_Runner
-ML_Runner -->|"Reads batch for analysis"| PG_Raw
+ML_Runner -->|"Reads all sources combined"| PG_Raw
 Score     -->|"Writes analysed clusters"| PG_ML
 ```
 
@@ -312,8 +326,8 @@ SS -->|"⑤ Return JSON\n{query, trend_score}"| API
 API --> GW --> USER
 
 %% Worker daemon
-REDIS_Q -->|"BRPOP (blocking)\npops query string"| WORKER["🤖 worker.py (Custom Daemon)\n① Scrapes Live Reddit Posts\n② Spawns NER & VADER NLP\n③ Embeds & KMeans Clusters posts\n④ TF-IDF extracts Topic Labels"]:::worker
-WORKER -->|"INSERT MLTrendResult\nrun_at = now() · ~1-3 rows"| PG_ML
+REDIS_Q -->|"BRPOP (blocking)\npops query string"| WORKER["🤖 worker.py (Custom Daemon)\n① NewsAPI /everything (primary)\n② HackerNews Algolia (fallback)\n③ VADER + MiniLM + KMeans NLP\n④ TF-IDF extracts Topic Labels"]:::worker
+WORKER -->|"INSERT MLTrendResult\nrun_at = now() · subreddits=LIVE_SEARCH|source"| PG_ML
 ```
 
 ### 3. ML Engine Internal Mathematical Pipeline

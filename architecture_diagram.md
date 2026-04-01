@@ -61,25 +61,37 @@ end
 %% ══════════════════════════════════════════════════════════════════════════
 %% LAYER 4 — BACKGROUND WORKER (Custom Redis Daemon)
 %% ══════════════════════════════════════════════════════════════════════════
-Worker["🤖 worker.py\nBlocking BRPOP on 'search_queue'\nRuns full ML TrendPipeline\nWrites result → PostgreSQL"]:::worker
+Worker["🤖 worker.py\nBlocking BRPOP on 'search_queue'\nFetches NewsAPI /everything\nHackerNews Algolia fallback\nRuns full ML TrendPipeline\nWrites result → PostgreSQL"]:::worker
 
 %% ══════════════════════════════════════════════════════════════════════════
-%% LAYER 5 — ETL DATA PIPELINE (Scheduled, hourly)
+%% LAYER 5 — HYBRID ETL DATA PIPELINE (Scheduled, hourly)
 %% ══════════════════════════════════════════════════════════════════════════
-subgraph ETL["🔄 ETL Pipeline  (cron_jobs.py — runs hourly)"]
-    direction LR
-    Collector["reddit_collector.py\nPRAW → Reddit JSON API\nFilters megathreads\nSaves reddit_data.csv"]:::etl
-    Cleaner["raw_to_clean.py\nRegex: strip URLs / emojis\nNormalise casing\nSaves reddit_data_cleaned.csv"]:::etl
-    Loader["db_loader.py\nDataLoader.load_to_postgres()\nUpsert ON CONFLICT post_id"]:::etl
+subgraph ETL["🔄 Hybrid ETL Pipeline  (cron_jobs.py — runs hourly)"]
+    direction TB
+
+    subgraph Phase1["Phase 1 — Reddit Sentiment Signals (CSV path)"]
+        direction LR
+        Reddit["reddit_collector.py\n5 curated subreddits\nhot+new dual feed\nExponential backoff\nDedup by post_id"]:::etl
+        Cleaner["raw_to_clean.py\nRegex: strip URLs / emojis\nNormalise casing"]:::etl
+        Loader["db_loader.py\nDataLoader.load_to_postgres()\nUpsert ON CONFLICT post_id"]:::etl
+    end
+
+    subgraph Phase2["Phase 2 — NewsAPI Topic Discovery (direct to DB)"]
+        News["news_collector.py\nTop headlines + 10 topic searches\nUser search queries from DB\nSortBy=publishedAt (freshest)"]:::etl
+    end
+
+    subgraph Phase3["Phase 3 — HackerNews Tech Discourse (direct to DB)"]
+        HN["hacker_news_collector.py\ntopstories + newstories feeds\nNo auth / no rate limits\nDedup by story ID"]:::etl
+    end
 end
-Collector --> Cleaner --> Loader
+Reddit --> Cleaner --> Loader
 
 %% ══════════════════════════════════════════════════════════════════════════
-%% LAYER 6 — ML ENGINE (Triggered after ETL)
+%% LAYER 6 — ML ENGINE (Triggered after all ETL phases)
 %% ══════════════════════════════════════════════════════════════════════════
 subgraph MLEngine["🧠 ML Engine  (TrendPipeline — called by ml_runner.py)"]
     direction TB
-    ML_Runner["ml_runner.py\nOrchestrator — reads reddit_trends\nthen runs full pipeline"]:::ml
+    ML_Runner["ml_runner.py\nOrchestrator — reads reddit_trends\n(all sources combined)\nthen runs full pipeline"]:::ml
     Sentiment["sentiment/\nNLTK VADER\nCompound score −1 → +1\npos / neu / neg breakdown"]:::ml
     Embed["topic_modeling/\nsentence-transformers\nall-MiniLM-L6-v2\n384-d dense vectors"]:::ml
     Cluster["topic_modeling/\nscikit-learn KMeans\nSemantic grouping"]:::ml
@@ -92,7 +104,7 @@ ML_Runner --> Sentiment --> Embed --> Cluster --> Topic --> Score
 %% LAYER 7 — STORAGE
 %% ══════════════════════════════════════════════════════════════════════════
 subgraph Storage["🗄️ Storage  (Docker-managed)"]
-    PG_Raw[("PostgreSQL\nreddit_trends\npost_id · title · content\nups · subreddit · created_utc")]:::db
+    PG_Raw[("PostgreSQL\nreddit_trends\npost_id · title · content\nups · subreddit · created_utc\nSources: Reddit+NewsAPI+HN")]:::db
     PG_ML[("PostgreSQL\nml_trend_results\ntopic_id · keywords · score\nsentiment · velocity · subreddits")]:::db
     PG_Search[("PostgreSQL\nsearches\nquery · trend_score · region")]:::db
     Redis_Queue[("Redis :6379\nList: search_queue\n(LPUSH / BRPOP queue)")]:::cache
@@ -103,8 +115,9 @@ end
 %% EXTERNAL APIs
 %% ══════════════════════════════════════════════════════════════════════════
 subgraph External["🌍 External APIs"]
-    API_Reddit["Reddit JSON API\n(PRAW / direct HTTP)"]:::external
-    API_News["NewsAPI.org\narticles + sentiment"]:::external
+    API_Reddit["Reddit JSON API\n(5 subreddits, sentiment only)\nhot+new feeds, exponential backoff"]:::external
+    API_News["NewsAPI.org\nPrimary topic discovery\nheadlines + /everything search"]:::external
+    API_HN["HackerNews API\n(Firebase + Algolia)\nTech discourse, no rate limits"]:::external
 end
 
 %% ══════════════════════════════════════════════════════════════════════════
@@ -130,8 +143,6 @@ R_News   -->|"fetch + summarise"| S_News
 %% — Search Service dual path
 S_Search -->|"① Lookup ML keywords"| PG_ML
 S_Search -->|"② Cache miss → LPUSH query"| Redis_Queue
-S_Search -->|"② Parallel live fallback\nhttpx → VADER score"| API_Reddit
-S_Search -->|"② NewsAPI fallback\n(if Reddit < 5 results)"| API_News
 S_Search -->|"③ Save Search record"| PG_Search
 S_Search -->|"Cache hit → return"| Redis_Cache
 
@@ -144,14 +155,21 @@ S_News -->|"Fetch articles"| API_News
 
 %% — Redis Queue → Worker
 Redis_Queue -->|"BRPOP (blocking pop)"| Worker
-Worker -->|"Extensive NLP & Clustering\nWrite MLTrendResult row"| PG_ML
+Worker -->|"NewsAPI /everything (primary)\nHN Algolia (fallback)\nML → write MLTrendResult"| PG_ML
 
-%% — ETL Pipeline
-Collector -->|"PRAW scrape"| API_Reddit
+%% — Phase 1: Reddit (CSV pipeline)
+Reddit    -->|"5 subreddits, hot+new"| API_Reddit
 Loader    -->|"Upsert ON CONFLICT post_id"| PG_Raw
 
+%% — Phase 2: NewsAPI (direct to DB)
+News      -->|"Top headlines + topics"| API_News
+News      -->|"DataLoader → Upsert"| PG_Raw
+
+%% — Phase 3: HackerNews (direct to DB)
+HN        -->|"topstories + newstories"| API_HN
+HN        -->|"DataLoader → Upsert"| PG_Raw
+
 %% — ML Engine trigger
-Loader    -->|"On ETL success\ntriggers ml_runner.py"| ML_Runner
-ML_Runner -->|"Reads batch for analysis"| PG_Raw
+ML_Runner -->|"Reads all sources combined"| PG_Raw
 Score     -->|"Writes analysed clusters"| PG_ML
 ```
