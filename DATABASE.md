@@ -35,10 +35,14 @@ PostgreSQL contains **3 tables:**
 
 ### Table 1 — `reddit_trends`
 
-**Role:** The ML engine's input feed. Stores cleaned Reddit posts accumulated over time via hourly upserts.
+**Role:** The ML engine's unified input feed. Stores cleaned posts and articles from all three data sources: Reddit (sentiment signals), NewsAPI (topic discovery), and HackerNews (tech discourse).
 
-**Written by:** `data_pipeline/loaders/db_loader.py` → `DataLoader.load_to_postgres()`  
-**Read by:** `ml_engine/pipelines/ml_runner.py` → `fetch_latest_posts()` (latest 500 rows)  
+**Written by:**
+- `data_pipeline/loaders/db_loader.py` → Reddit CSV path (via `DataLoader.load_to_postgres()`)
+- `data_pipeline/collectors/news_collector.py` → NewsAPI articles (direct, no CSV step)
+- `data_pipeline/collectors/hacker_news_collector.py` → HN stories (direct, no CSV step)
+
+**Read by:** `ml_engine/pipelines/ml_runner.py` → `fetch_latest_posts()` (latest 500 rows)
 **Auto-pruned:** Every ML run deletes rows where `processed_at < NOW() - INTERVAL '24 hours'`
 
 | Column | Type | Constraint | Description |
@@ -49,7 +53,7 @@ PostgreSQL contains **3 tables:**
 | `content` | `TEXT` | — | NLP-cleaned post body / selftext |
 | `ups` | `INTEGER` | — | Reddit upvote count at time of scrape |
 | `num_comments` | `INTEGER` | — | Number of top-level comments extracted |
-| `subreddit` | `VARCHAR(100)` | — | Source subreddit (e.g. `technology`, `worldnews`) |
+| `subreddit` | `VARCHAR(100)` | — | Source identifier. For Reddit: subreddit name (e.g. `technology`). For NewsAPI: publisher name (e.g. `BBC News`). For HackerNews: `HackerNews`. |
 | `created_utc` | `TIMESTAMP` | — | Original Reddit post creation time (UTC) |
 | `sentiment_score` | `FLOAT` | `DEFAULT 0.0` | Reserved — not actively populated by current pipeline |
 | `processed_at` | `TIMESTAMP` | `DEFAULT CURRENT_TIMESTAMP` | Timestamp of last upsert by `db_loader.py`. Used for 24h pruning and ML batch ordering. |
@@ -166,10 +170,14 @@ User searches "AI" → search_service LPUSH "AI" → worker BRPOP → process �
 ## Data Lifecycle Summary
 
 ```
-Reddit Posts (raw)
-    ↓  [hourly via cron_jobs.py]
-reddit_trends          ← ML input feed (cleaned, upserted, 24h TTL)
-    ↓  [ml_runner.py]
+Reddit Posts (sentiment signals, 5 subreddits, hot+new)
+    ↓  [Phase 1 — reddit_collector → raw_to_clean → db_loader]
+NewsAPI Articles (primary topics, headlines + keyword search)
+    ↓  [Phase 2 — news_collector → direct to DB]
+HackerNews Stories (tech discourse, top + new)
+    ↓  [Phase 3 — hacker_news_collector → direct to DB]
+reddit_trends          ← Unified ML input feed (all sources, 24h TTL)
+    ↓  [Phase 4 — ml_runner.py, reads latest 500 rows]
 ml_trend_results       ← ML output (trend clusters, 24h TTL)
     ↓  [FastAPI services]
 Frontend               ← Global Trends, India Trends, Search pages
@@ -178,6 +186,7 @@ User searches
     ↓  [search_service.py]
 searches               ← Permanent audit log (no pruning)
 search_queue (Redis)   ← Triggers worker.py for deep ML processing
+                           (worker uses NewsAPI + HN Algolia, not Reddit)
 ```
 
 ---
@@ -187,9 +196,14 @@ search_queue (Redis)   ← Triggers worker.py for deep ML processing
 ```env
 DB_USER=postgres
 DB_PASSWORD=your_password_here
-DB_HOST=localhost
-DB_PORT=5432
+DB_HOST=127.0.0.1
+DB_PORT=5433
 DB_NAME=reddit_db
+
+# External APIs
+NEWS_API_KEY=your_newsapi_key_here
 ```
 
-> **Port note:** Docker maps the container's internal `5432` to host port `5433`. The `.env` uses `5432` because the backend connects from inside the same network context. If connecting from a DB GUI (e.g. DBeaver, pgAdmin), use port `5433`.
+> **Port note:** Docker maps the container's internal `5432` to host port `5433`. Use `5433` when connecting from DB GUIs (DBeaver, pgAdmin). The backend code connects via this port as configured in `.env`.
+
+> **Reddit credentials:** No OAuth credentials are required. The pipeline uses Reddit's public JSON API with a reduced 5-subreddit set and exponential backoff. Reddit is used for sentiment signals only, not as the primary data source.

@@ -19,17 +19,23 @@ class Config:
 
     # 🌐 2. Reddit Scraping Settings
     # 🌐 2. Reddit Scraping Settings
+    # 🎯 Sentiment-focused subreddits only (reduced to prevent 429 rate-limits).
+    # NewsAPI + HackerNews now handle topic discovery; Reddit provides social sentiment signals.
     SUBREDDITS = [
-        "technology", "worldnews", "investing", "ArtificialInteligence", "developersIndia", 
-        "science", "MachineLearning", "economy", "futurology", "movies", "television", 
-        "gaming", "pcgaming", "legaladvice", "LawFirm", "sports", "soccer", "nba", 
-        "fitness", "nutrition", "popculturechat", "gadgets", "CryptoCurrency", "books", "Music"
+        "worldnews",       # Global events sentiment
+        "technology",      # Tech discourse tone
+        "AskReddit",       # Broad public opinion
+        "science",         # Scientific community sentiment
+        "economy",         # Financial sentiment
     ]
-    KEYWORDS = ["AI", "SaaS", "Climate Change", "Startups", "Remote Work", "Cybersecurity", "Electric Vehicles"]
-    
-    POST_LIMIT = 50       # Number of posts per category
-    COMMENT_LIMIT = 5     # Number of comments per post
-    USER_AGENT = ".."
+    KEYWORDS = []  # Keywords now handled by NewsAPI search, not Reddit
+
+    # Fetch both hot (engagement) and new (recency) posts per subreddit
+    REDDIT_SORT_MODES = ["new", "hot"]
+
+    POST_LIMIT = 20       # Posts per subreddit per sort mode (20 hot + 20 new = 40 max, deduped)
+    COMMENT_LIMIT = 3     # Fewer comments per post to reduce API calls
+    USER_AGENT = "TrendIntelligence/2.0 (personal research bot)"
     
     REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "")
     REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "")
