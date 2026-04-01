@@ -398,3 +398,48 @@ VEL & ACC --> FINAL_FORMULA["📊 Final Composite Score Formula: \n(0.35 * Volum
 
 FINAL_FORMULA --> OUTPUT["🏆 Top 20 Ranked Trends\nStructured JSON payload arrays"]:::data
 ```
+
+### 4. Background Worker (Live Search ML Engine)
+```mermaid
+flowchart TD
+
+classDef process    fill:#3b82f6,stroke:#1d4ed8,color:#fff;
+classDef ext        fill:#6b7280,stroke:#374151,color:#fff;
+classDef cache      fill:#f97316,stroke:#c2410c,color:#fff;
+classDef db         fill:#ef4444,stroke:#7f1d1d,color:#fff;
+classDef ml         fill:#8b5cf6,stroke:#4c1d95,color:#fff;
+
+REDIS[("Redis\nsearch_queue")]:::cache
+WORK_LOOP["Worker Daemon Loop\n(brpop)"]:::process
+
+REDIS -->|"User Query String (e.g. 'Tesla')"| WORK_LOOP
+
+subgraph Worker ["🤖 worker.py Architecture"]
+    direction TB
+    QUERY["Extract Query"]:::process
+    
+    NEWS_API["🌍 fetch_newsapi_posts(query)\nNewsAPI /everything (Primary)"]:::ext
+    HN_API["🌍 fetch_hackernews_posts(query)\nAlgolia API (Fallback max 20)"]:::ext
+
+    QUERY -->|"Request live articles"| NEWS_API
+    NEWS_API -->|"< 5 results?"| HN_API
+    
+    NEWS_API -->|"Combine text & meta"| MERGE
+    HN_API -->|"Combine text & meta"| MERGE
+    
+    MERGE["📝 Standardize Raw Texts\nExtract Upvotes, Comments, Source"]:::process
+    
+    PIPELINE["🧠 TrendPipeline.run()\n1. VADER Sentiment Analysis\n2. MiniLM Embeddings\n3. KMeans Clustering\n4. TF-IDF Top Keywords"]:::ml
+    
+    MERGE -->|"Inject into ML Pipeline"| PIPELINE
+    
+    FORMAT["📦 Construct MLTrendResult\nSet run_at = now()\nTag subreddits = 'LIVE_SEARCH | source'"]:::process
+    
+    PIPELINE -->|"Return clustered topics"| FORMAT
+end
+
+WORK_LOOP --> Worker
+
+POSTGRES[("🐘 PostgreSQL\nml_trend_results_table")]:::db
+FORMAT -->|"SQLAlchemy Session.commit()"| POSTGRES
+```
