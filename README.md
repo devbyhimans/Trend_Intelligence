@@ -385,9 +385,8 @@ VADER --> AGG
 
 PREPROC --> EMBED["🧠 EmbeddingModel\n`sentence-transformers/all-MiniLM-L6-v2`\nTransforms text into 384-dimensional vectors"]:::model
 EMBED --> CLUSTER["🧩 ClusterModel\nAgglomerative Clustering / KMeans\nGroups similar vectors semantically"]:::model
-CLUSTER --> AGG
 
-PREPROC --> TFIDF["🏷️ TopicLabeler (scikit-learn)\nTF-IDF Vectorizer\nFinds top 5 keywords per Cluster"]:::model
+CLUSTER --> TFIDF["🏷️ TopicLabeler (scikit-learn)\nTF-IDF Vectorizer\nFinds top 5 keywords per Cluster"]:::model
 TFIDF --> AGG
 
 AGG --> SCORE["📈 TrendScorer\nAggregates Meta/NLP per Topic ID (Min 3 posts)"]:::math

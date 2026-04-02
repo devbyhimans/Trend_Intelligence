@@ -29,9 +29,8 @@ META --> AGG["Data Assembly\nper-cluster aggregation"]:::process
 
 PREPROC --> EMBED["🧠 EmbeddingModel\n`sentence-transformers/all-MiniLM-L6-v2`\nTransforms text into 384-dimensional vectors"]:::model
 EMBED --> CLUSTER["🧩 ClusterModel\nKMeans / AgglomerativeClustering\nGroups similar vectors semantically\nMin 3 posts to form valid cluster"]:::model
-CLUSTER --> AGG
 
-PREPROC --> TFIDF["🏷️ TopicLabeler (scikit-learn)\nTF-IDF Vectorizer\nFinds top 5 keywords per Cluster"]:::model
+CLUSTER --> TFIDF["🏷️ TopicLabeler (scikit-learn)\nTF-IDF Vectorizer\nFinds top 5 keywords per Cluster"]:::model
 TFIDF --> AGG
 
 AGG --> SCORE["📈 TrendScorer\nAggregates Meta/NLP per Topic ID\nvolume · sentiment · subreddits\ntop-3 posts by upvotes · avg_ups · avg_comments"]:::math
